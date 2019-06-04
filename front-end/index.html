@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>home page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			
+			<img src="images\1.jpg" style="width: 100%">
+			
+		</div>
+
+		<div class="mySlides fade">
+		
+			<img src="images\2.jpg" style="width: 100%">
+			</div>
+
+		<div class="mySlides fade">
+			
+			<img src="images\3.jpg" style="width: 100%">
+			</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next"
+			onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	
+
+
+	<div class="navbar">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+			<div class="dropdown">
+				<button class="dropbtn">
+					Categories <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<div class="header">
+						<h2>Category Menu</h2>
+					</div>
+					<div class="row">
+						<div class="column">
+							<h3>Sports</h3>
+							<a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link
+								3</a>
+						</div>
+						<div class="column">
+							<h3>Fashion</h3>
+							<a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link
+								3</a>
+						</div>
+						<div class="column">
+							<h3>World</h3>
+							<a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link
+								3</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search-container">
+				<form action="/action_page.php">
+				  <input type="text" placeholder="Search.." name="search">
+				  <button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		
+	</div>
+
+	<div class="row">
+		<div class="side">
+			<h2>Tin bên lề</h2>
+			<h5>Title</h5>
+			<div class="fakeimg" style="height: 200px;">Image</div>
+			<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+			<h3>More Text</h3>
+			<p>Lorem ipsum dolor sit ame.</p>
+			<div class="fakeimg" style="height: 60px;">Image</div>
+			<br>
+			<div class="fakeimg" style="height: 60px;">Image</div>
+			<br>
+			<div class="fakeimg" style="height: 60px;">Image</div>
+		</div>
+		<div class="main">
+			<h2>Chuyển nhượng MU: De Gea đóng vai thuyết khách, "siêu bom tấn" thực sự lộ diện</h2>
+			<h5>Thứ Ba, ngày 04/06/2019 19:05 PM (GMT+7)</h5>
+			
+			<img src="images\ramos.jpg"  width=100% height="400">
+			
+			<p>MU có Ramos hòa toàn miễn phí?</p>
+				<p>	Bối cảnh hiện tại đang ủng hộ MU trong phi vụ chèo kéo Sergio Ramos. 
+				Và nếu dự đoán của tờ Daily Mail là chính xác, thậm chí đội chủ sân Old Trafford còn có 
+				thể sở hữu trung vệ đội trưởng của Real Madrid hoàn toàn miễn phí, dù hợp đồng của Ramos 
+				với Real còn thời hạn đến 2021...
+				</p>
+				<a href="https://zingmp3.vn/">Xem Thêm...</a>
+			<br>
+			
+			<h2>Thống kê bất ngờ về Quang Hải trước King’s Cup 2019</h2>
+			<h5>Thứ Tư, ngày 05/06/2019 00:04 AM (GMT+7)</h5>
+			<img src="images\hai.jpg"  width=100% height="400">	
+			<p>Tiền đạo CLB Hà Nội đang có phong độ không thực sự tốt khi được HLV Park Hang Seo triệu tập vào đội tuyển Việt Nam dự King’s Cup 2019...</p>
+			<p>Cụ thể sau 12 trận đấu tại Wake Up 247 V-League 2019, Quang Hải mới ghi được 2 bàn thắng cho CLB Hà Nội.
+			Đây là con số không hề ấn tượng so với tên tuổi cũng như sự kỳ vọng của giới hâm mộ vào chân sút quê Đông Anh...</p>
+			<a href="https://www.24h.com.vn/bong-da/thong-ke-bat-ngo-ve-quang-hai-truoc-kings-cup-2019-c48a1055772.html">Xem Thêm...</a>
+			
+		</div>
+	</div>
+
+	<div class="footer">
+		<h2>Footer</h2>
+	</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
