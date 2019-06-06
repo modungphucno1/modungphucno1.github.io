@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="News Portal.">
         <meta name="author" content="PHPGurukul">
+		
 
 
         <!-- App title -->
@@ -20,6 +21,18 @@
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
 
         <script src="assets/js/modernizr.min.js"></script>
+		<script type = javascript>
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "admin" && password == "admin"){
+	return true;
+// Redirecting to other page.
+}else{
+return false;
+alert("Incorrect username or password");
+}}
+</script>
 
     </head>
 
@@ -44,7 +57,7 @@
                                     <!--<h4 class="text-uppercase font-bold m-b-0">Sign In</h4>-->
                                 </div>
                                 <div class="account-content">
-                                    <form class="form-horizontal" method="post" onsubmit = "validate()">
+                                    <form class="form-horizontal" method="post" action = "dashboard.html" onsubmit = "return validate()">
 
                                         <div class="form-group ">
                                             <div class="col-xs-12">
@@ -70,17 +83,7 @@
                                 </div>
                             </div>
                             <!-- end card-box-->
-<script type = javascript>
-function validate(){
-var username = document.getElementById("username").value;
-var password = document.getElementById("password").value;
-if ( username == "admin" && password == "admin"){
 
-location = "dashboard.html"; // Redirecting to other page.
-}else{
-alert("Incorrect username or password");
-}}
-</script>
 
                     
 
