@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24b34e4a-da98-4f09-af85-3beacd4226c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/assets/js/manageCategory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-author.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-author.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-category.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/leftsidebar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/manage-author.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-author.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/manage-categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-categories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/manage-posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/json/category.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/json/category.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,16 +29,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/assets/json/category.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/manage-categories.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
@@ -103,10 +95,10 @@
       <list>
         <option value="$PROJECT_DIR$/admin/assets/js/test.js" />
         <option value="$PROJECT_DIR$/admin/manage-posts.html" />
-        <option value="$PROJECT_DIR$/admin/assets/json/category.json" />
         <option value="$PROJECT_DIR$/admin/add-category.html" />
         <option value="$PROJECT_DIR$/admin/assets/js/manageCategory.js" />
         <option value="$PROJECT_DIR$/admin/manage-categories.html" />
+        <option value="$PROJECT_DIR$/admin/assets/json/category.json" />
       </list>
     </option>
   </component>
@@ -175,6 +167,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -210,12 +203,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560009438115</updated>
-      <workItem from="1560009442232" duration="9653000" />
+      <workItem from="1560009442232" duration="10238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9653000" />
+    <option name="totallyTimeSpent" value="10238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -270,13 +263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/assets/json/category.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/assets/js/manageCategory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -301,6 +287,13 @@
             <element signature="e#122#128#0" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#1;n#td#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/assets/json/category.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
