@@ -13,9 +13,9 @@
         <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
-        <script src="assets/js/modernizr.min.js"></script>
 
+        <script src="assets/js/modernizr.min.js"></script>
+		<script src="assets/js/manageCategory.js"></script>
     </head>
 
 
@@ -70,7 +70,7 @@
                                         <h5>Hi, Admin</h5>
                                     </li>
                               
-                                    <li><a href="change-password.html"><i class="ti-settings m-r-5"></i> Chnage Password</a></li>
+                                    <li><a href="change-password.html"><i class="ti-settings m-r-5"></i> Change Password</a></li>
                            
                                     <li><a href="index.html"><i class="ti-power-off m-r-5"></i> Logout</a></li>
                                 </ul>
@@ -85,7 +85,7 @@
 
 
 <!-- ========== Left Sidebar Start ========== -->
-                       <div class="left side-menu">
+            <div class="left side-menu">
                 <div class="sidebar-inner slimscrollleft">
 
                     <!--- Sidemenu -->
@@ -97,53 +97,43 @@
                                 <a href="dashboard.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
                          
                             </li>
-
-
-
-               
-
-
+							<li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>User </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-author.html">Create User</a></li>
+                                    <li><a href="manage-author.html">Manage User</a></li>
+                                </ul>
+                            </li>   
+														<li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Role </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-author.html">Create Role</a></li>
+                                    <li><a href="manage-author.html">Manage Role</a></li>
+									<li><a href="#">Assign Role</a></li>
+                                </ul>
+                            </li>   
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Category </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                	<li><a href="add-category.html">Add Category</a></li>
+                                	<li><a href="add-category.html">Create Category</a></li>
                                     <li><a href="manage-categories.html">Manage Category</a></li>
                                 </ul>
                             </li>
-
-    <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Authors </span> <span class="menu-arrow"></span></a>
+            
+							<li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Post </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="add-author.html">Add Author</a></li>
-                                    <li><a href="manage-author.html">Manage Author</a></li>
-                                </ul>
-                            </li>               
-  <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Posts </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="add-post.html">Add Posts</a></li>
+                                    <li><a href="add-post.html">Create Posts</a></li>
                                     <li><a href="manage-posts.html">Manage Posts</a></li>
                                      
                                 </ul>
                             </li>  
-                     
-
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Pages </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> File & Folder </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="aboutus.html">About us</a></li>
-                                    <li><a href="contactus.html">Contact us</a></li>
+
                                 </ul>
                             </li>
-   <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Comments </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                  <li><a href="unapprove-comment.html">Waiting for Approval </a></li>
-                                    <li><a href="manage-comments.html">Approved Comments</a></li>
-                                </ul>
-                            </li>   
-
-                        </ul>
                     </div>
                     <!-- Sidebar -->
                     <div class="clearfix"></div>
@@ -151,6 +141,10 @@
                
 
                 </div>
+                <!-- Sidebar -left -->
+
+            </div>
+                
                 <!-- Sidebar -left -->
 
             </div>
@@ -196,15 +190,6 @@
 <div class="col-sm-6">  
 <!---Success Message--->  
 
-<div class="alert alert-success" role="alert">
-<strong>Well done!</strong> <?php echo htmlentities($msg);?>
-</div>
-
-
-<!---Error Message--->
-
-<div class="alert alert-danger" role="alert">
-<strong>Oh snap!</strong> <?php echo htmlentities($error);?></div>
 
 
 
@@ -217,18 +202,18 @@
 
                         			<div class="row">
                         				<div class="col-md-6">
-                        					<form class="form-horizontal" name="category" method="post">
+                        					<form class="form-horizontal" name="category" onsubmit = "return onFormSubmit()">
 	                                            <div class="form-group">
 	                                                <label class="col-md-2 control-label">Category</label>
 	                                                <div class="col-md-10">
-	                                                    <input type="text" class="form-control" value="" name="category" required>
+	                                                    <input type="text" class="form-control" value="" name="category" required id = "category">
 	                                                </div>
 	                                            </div>
 	                                     
 	                                            <div class="form-group">
 	                                                <label class="col-md-2 control-label">Category Description</label>
 	                                                <div class="col-md-10">
-	                                                    <textarea class="form-control" rows="5" name="description" required></textarea>
+	                                                    <textarea class="form-control" rows="5" name="description" required id = "description"></textarea>
 	                                                </div>
 	                                            </div>
 
@@ -276,7 +261,7 @@
 
             </div>
         </div>
-
+		
         <script>
             var resizefunc = [];
         </script>
@@ -290,7 +275,7 @@
         <script src="assets/js/waves.js"></script>
         <script src="assets/js/jquery.slimscroll.js"></script>
         <script src="assets/js/jquery.scrollTo.min.js"></script>
-        <script src="../plugins/switchery/switchery.min.js"></script>
+
 
         <!-- App js -->
         <script src="assets/js/jquery.core.js"></script>

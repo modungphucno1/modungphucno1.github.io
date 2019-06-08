@@ -13,7 +13,8 @@
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
         <script src="assets/js/modernizr.min.js"></script>
-
+		<script src="assets/js/manageCategory.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     </head>
 
 
@@ -81,7 +82,7 @@
             </div>
 
             <!-- ========== Left Sidebar Start ========== -->
-            <div class="left side-menu">
+             <div class="left side-menu">
                 <div class="sidebar-inner slimscrollleft">
 
                     <!--- Sidemenu -->
@@ -93,53 +94,43 @@
                                 <a href="dashboard.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
                          
                             </li>
-
-
-
-               
-
-
+							<li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>User </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-author.html">Create User</a></li>
+                                    <li><a href="manage-author.html">Manage User</a></li>
+                                </ul>
+                            </li>   
+														<li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Role </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-author.html">Create Role</a></li>
+                                    <li><a href="manage-author.html">Manage Role</a></li>
+									<li><a href="#">Assign Role</a></li>
+                                </ul>
+                            </li>   
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Category </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                	<li><a href="add-category.html">Add Category</a></li>
+                                	<li><a href="add-category.html">Create Category</a></li>
                                     <li><a href="manage-categories.html">Manage Category</a></li>
                                 </ul>
                             </li>
-
-    <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Authors </span> <span class="menu-arrow"></span></a>
+            
+							<li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Post </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="add-author.html">Add Author</a></li>
-                                    <li><a href="manage-author.html">Manage Author</a></li>
-                                </ul>
-                            </li>               
-  <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Posts </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="add-post.html">Add Posts</a></li>
+                                    <li><a href="add-post.html">Create Posts</a></li>
                                     <li><a href="manage-posts.html">Manage Posts</a></li>
                                      
                                 </ul>
                             </li>  
-                     
-
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Pages </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> File & Folder </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="aboutus.html">About us</a></li>
-                                    <li><a href="contactus.html">Contact us</a></li>
+
                                 </ul>
                             </li>
-   <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Comments </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                  <li><a href="unapprove-comment.html">Waiting for Approval </a></li>
-                                    <li><a href="manage-comments.html">Approved Comments</a></li>
-                                </ul>
-                            </li>   
-
-                        </ul>
                     </div>
                     <!-- Sidebar -->
                     <div class="clearfix"></div>
@@ -147,6 +138,10 @@
                
 
                 </div>
+                <!-- Sidebar -left -->
+
+            </div>
+                
                 <!-- Sidebar -left -->
 
             </div>
@@ -189,25 +184,11 @@
 <div class="col-sm-6">  
  
 
-<div class="alert alert-success" role="alert">
-<strong>Well done!</strong>
-</div>
-
-
-
-<div class="alert alert-danger" role="alert">
-<strong>Oh snap!</strong> </div>
 
 
 
 </div>
                                  
-                                 
-                                    
-
-
-                                   
-
 
                                     <div class="row">
 										<div class="col-md-12">
@@ -219,34 +200,28 @@
  </div>
 
 												<div class="table-responsive">
-                                                    <table class="table m-0 table-colored-bordered table-bordered-primary">
+                                                    <table class="table m-0 table-colored-bordered table-bordered-primary" id = "tblCategory">
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
                                                                 <th> Category</th>
                                                                 <th>Description</th>
-                                                          
-                                                                <th>Posting Date</th>
-                                                                  <th>Last updation Date</th>
+                                                                <th>Created at</th>
+                                                                <th>Last updated at</th>
                                                                 <th>Action</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
 
 
- <tr>
-<th scope="row"></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a href="#"><i class="fa fa-pencil" style="color: #29b6f6;"></i></a> 
-	&nbsp;<a href="#"> <i class="fa fa-trash-o" style="color: #f05050"></i></a> </td>
-</tr>
+
+
+
 
 </tbody>
                                                   
                                                     </table>
+													
                                                 </div>
 
 
@@ -259,74 +234,6 @@
 							
 									</div>
                                     <!--- end row -->
-
-
-                                    
-<div class="row">
-<div class="col-md-12">
-<div class="demo-box m-t-20">
-<div class="m-b-30">
-
- <h4><i class="fa fa-trash-o" ></i> Deleted Categories</h4>
-
- </div>
-
-<div class="table-responsive">
-<table class="table m-0 table-colored-bordered table-bordered-danger">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>#</th>
-                                                                <th> Category</th>
-                                                                <th>Description</th>
-                                                          
-                                                                <th>Posting Date</th>
-                                                                  <th>Last updation Date</th>
-                                                                <th>Action</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-
-
- <tr>
-<th scope="row"></th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a href="#"><i class="ion-arrow-return-right" title="Restore this category"></i></a> 
-	&nbsp;<a href="#" title="Delete forever"> <i class="fa fa-trash-o" style="color: #f05050"></i> </td>
-</tr>
-
-</tbody>
-                                                  
-                                                    </table>
-                                                </div>
-
-
-
-                                                
-											</div>
-
-										</div>
-
-							
-									</div>                  
-                                  
-
-
-
-                                   
-
-
-
-
-
-
-                        
-
-
-
-
 
 
                     </div> <!-- container -->
@@ -342,8 +249,8 @@
         </div>
         <!-- END wrapper -->
 
-
-
+		
+		
         <script>
             var resizefunc = [];
         </script>
@@ -365,3 +272,25 @@
 
     </body>
 </html>
+<script>
+    $(document).ready(function () {
+       $.getJSON("assets/json/category.json", function (data) {
+           let category_data = '';
+           $.each(data, function (key, value) {
+               category_data += '<tr>';
+               category_data += '<td>'+ value.id+'</td>';
+               category_data += '<td>'+ value.category+'</td>';
+               category_data += '<td>'+ value.description+'</td>';
+               category_data += '<td>'+ value.creatAt+'</td>';
+               category_data += '<td>'+ value.updateAt+'</td>';
+               category_data += '<td> <a href="#"><i class="fa fa-pencil" style="color: #29b6f6;"  onclick="onEdit(this)"></i></a>\n                       ' +
+                   '&nbsp;<a href="#" > <i class="fa fa-trash-o" style="color: #f05050" onclick="onDelete(this)"></i></a></td>';
+               category_data += '</tr>';
+
+
+           });
+           $('#tblCategory').append(category_data);
+           console.log(category_data);
+       });
+    });
+</script>
