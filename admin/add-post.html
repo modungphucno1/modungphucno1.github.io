@@ -32,6 +32,13 @@
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
 		<link href="assets/css/editor.css" type="text/css" rel="stylesheet"/>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+
+        <!-- include summernote css/js -->
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
 		
 <script src="assets/js/modernizr.min.js"></script>
 
@@ -95,7 +102,7 @@
                                         <h5>Hi, Admin</h5>
                                     </li>
                               
-                                    <li><a href="change-password.html"><i class="ti-settings m-r-5"></i> Change Password</a></li>
+                                    <li><a href="#"><i class="ti-settings m-r-5"></i> Change Password</a></li>
                            
                                     <li><a href="index.html"><i class="ti-power-off m-r-5"></i> Logout</a></li>
                                 </ul>
@@ -113,40 +120,41 @@
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
                         <ul>
-                        	<li class="menu-title">Navigation</li>
+                            <li class="menu-title">Navigation</li>
 
                             <li class="has_sub">
                                 <a href="dashboard.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
-                         
+
                             </li>
-							<li class="has_sub">
+                            <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>User </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="add-author.html">Create User</a></li>
-                                    <li><a href="manage-author.html">Manage User</a></li>
+                                    <li><a href="add-user.html">Create User</a></li>
+                                    <li><a href="manage-user.html">Manage User</a></li>
                                 </ul>
-                            </li>   
-														<li class="has_sub">
+                            </li>
+                            <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Role </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="#">Create Role</a></li>
-                                    <li><a href="#">Manage Role</a></li>
-									<li><a href="#">Assign Role</a></li>
+                                    <li><a href="add-role.html">Create Role</a></li>
+                                    <li><a href="manage-role.html">Manage Role</a></li>
+                                    <li><a href="#">Assign Role</a></li>
                                 </ul>
-                            </li>   
+                            </li>
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Category </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                	<li><a href="add-category.html">Create Category</a></li>
+                                    <li><a href="add-category.html">Create Category</a></li>
                                     <li><a href="manage-categories.html">Manage Category</a></li>
                                 </ul>
                             </li>
-            
-							<li class="has_sub">
+
+                            <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Post </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                	<li><a href="add-category.html">Create Post</a></li>
-                                    <li><a href="manage-categories.html">Manage Post</a></li>
+                                    <li><a href="add-post.html">Create Posts</a></li>
+                                    <li><a href="manage-posts.html">Manage Posts</a></li>
+
                                 </ul>
                             </li>
                             <li class="has_sub">
@@ -185,16 +193,16 @@
                         <div class="row">
 							<div class="col-xs-12">
 								<div class="page-title-box">
-                                    <h4 class="page-title">Add Post </h4>
+                                    <h4 class="page-title">Create Post </h4>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
-                                            <a href="#">Post</a>
+                                            <a href="#">Admin</a>
                                         </li>
                                         <li>
-                                            <a href="#">Add Post </a>
+                                            <a href="#">Post </a>
                                         </li>
                                         <li class="active">
-                                            Add Post
+                                            Create Post
                                         </li>
                                     </ol>
                                     <div class="clearfix"></div>
@@ -217,61 +225,89 @@
 
 
                         <div class="row">
-                            <div class="col-md-10 col-md-offset-1">
-                                <div class="p-6">
-                                    <div class="">
-<form name="addpost" method="post" enctype="multipart/form-data">
- <div class="form-group m-b-20">
-<label for="exampleInputEmail1">Post Title</label>
-<input type="text" class="form-control" id="posttitle" name="posttitle" placeholder="Enter title" required>
-</div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="x_panel">
+                                    <div class="x_content">
+
+                                        <form class="form-horizontal form-label-left" id = "myForm"  novalidate >
 
 
 
-<div class="form-group m-b-20">
-<label for="exampleInputEmail1">Category</label>
-<select class="form-control" name="category" id="category" onChange="getSubCat(this.value);" required>
-<option value="">Select Category </option>
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Title <span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input id="title" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" name="Thao" required="required" type="text" placeholder="Input title here">
+                                                </div>
+                                            </div>
 
-<option value="#"></option>
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Short Intro <span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input id="intro" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Input introduction here" required="required" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Written by <span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input id="write" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Author name" required="required" type="text">
+                                                </div>
+                                            </div>
 
+                                            <div class="x_title">
+                                                <h4>Content</h4>
 
-</select> 
-</div>
-    
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 nopadding">
+                                                    <textarea id="txtEditor" style = "resize: none" rows = "10" cols="150"></textarea>
+                                                </div>
+                                            </div>
+<script>
+    $(document).ready(function() {
+        $('#summernote').summernote();
+    });
+</script>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Status</label>
+                                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                                    <select type="button" class="btn btn-info btn-xl">
+                                                        <option value="0">Published</option>
+                                                        <option value="1">Draft</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
-         
-
-<div class="row">
-<div class="col-sm-12">
- <div class="card-box">
-<h4 class="m-b-30 m-t-0 header-title"><b>Post Details</b></h4>
-<textarea id="txtEditor" class="summernote" name="postdescription" required></textarea>
-</div>
-</div>
-</div>
-
-
-<div class="row">
-<div class="col-sm-12">
- <div class="card-box">
-<h4 class="m-b-30 m-t-0 header-title"><b>Feature Image</b></h4>
-<input type="file" class="form-control" id="postimage" name="postimage"  required>
-</div>
-</div>
-</div>
-
-
-<button type="submit" name="submit" class="btn btn-success waves-effect waves-light">Save and Post</button>
- <button type="button" class="btn btn-danger waves-effect waves-light">Discard</button>
-                                        </form>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Category</label>
+                                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                                    <select type="button" class="btn btn-info btn-xl">
+                                                        <option value="0">LIFESTYLE</option>
+                                                        <option value="1">TECHNOLOGY</option>
+                                                        <option value="2">FASHION</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                                </form>
+                                <div class="form-group" style="text-align: center; margin-bottom: 40px">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <button type="button" class="btn btn-success" onclick="createPost()">Create</button>
+                                        <button type="button" class="btn btn-info" onclick="reset()">Reset</button>
+                                        <a href="viewpost.html"><button type="button" class="btn btn-danger">Cancel</button></a>
                                     </div>
-                                </div> <!-- end p-20 -->
-                            </div> <!-- end col -->
+                                </div>
+
+                            </div>
+                        </div><!-- end col -->
                         </div>
                         <!-- end row -->
 
-
+                </div>
 
                     </div> <!-- container -->
 

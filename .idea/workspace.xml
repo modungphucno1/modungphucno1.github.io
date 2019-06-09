@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24b34e4a-da98-4f09-af85-3beacd4226c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/assets/json/category.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/json/category.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-author.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-category.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/manage-author.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/manage-categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-categories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/manage-posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-posts.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,61 +24,51 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/assets/js/manageCategory.js">
+        <entry file="file://$PROJECT_DIR$/admin/add-user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+            <state relative-caret-position="500">
+              <caret line="137" column="26" selection-start-line="137" selection-start-column="26" selection-end-line="137" selection-end-column="26" />
               <folding>
-                <element signature="n#style#0;n#i#0;n#a#0;n#!!top" expanded="true" />
-                <element signature="e#116#122#1" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#span#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#span#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/assets/json/category.json">
+        <entry file="file://$PROJECT_DIR$/admin/add-role.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+            <state relative-caret-position="500">
+              <caret line="136" column="26" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/add-post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="265" column="110" selection-start-line="265" selection-start-column="110" selection-end-line="265" selection-end-column="110" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/manage-categories.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="323" column="34" selection-start-line="323" selection-start-column="34" selection-end-line="323" selection-end-column="34" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/manage-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="231" column="138" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="138" />
+            <state relative-caret-position="470">
+              <caret line="234" column="13" selection-start-line="234" selection-start-column="13" selection-end-line="234" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#10064#10070#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/add-category.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3162">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -85,6 +82,19 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>add u</find>
+      <find>//view</find>
+      <find>submit</find>
+      <find>submi</find>
+      <find>action</find>
+      <find>myForm</find>
+      <find>chang</find>
+      <find>role</find>
+      <find>change</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -92,11 +102,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/admin/assets/js/test.js" />
-        <option value="$PROJECT_DIR$/admin/manage-posts.html" />
-        <option value="$PROJECT_DIR$/admin/add-category.html" />
         <option value="$PROJECT_DIR$/admin/assets/js/manageCategory.js" />
         <option value="$PROJECT_DIR$/admin/assets/json/category.json" />
+        <option value="$PROJECT_DIR$/admin/manage-user.html" />
+        <option value="$PROJECT_DIR$/admin/manage-role.html" />
         <option value="$PROJECT_DIR$/admin/manage-categories.html" />
+        <option value="$PROJECT_DIR$/admin/dashboard.html" />
+        <option value="$PROJECT_DIR$/admin/add-category.html" />
+        <option value="$PROJECT_DIR$/admin/add-role.html" />
+        <option value="$PROJECT_DIR$/admin/add-user.html" />
+        <option value="$PROJECT_DIR$/admin/add-post.html" />
+        <option value="$PROJECT_DIR$/admin/manage-posts.html" />
       </list>
     </option>
   </component>
@@ -124,6 +140,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,7 +164,7 @@
               <item name="HCI" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HCI" type="b2602c69:ProjectViewProjectNode" />
@@ -160,14 +177,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tanng\Desktop\HCI\admin" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -181,12 +202,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.add-role.html">
+    <configuration name="add-role.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HCI/admin/add-role.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="manageCategory.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="manageCategory.js" working-dir="$PROJECT_DIR$/admin/assets/js">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.add-role.html" />
         <item itemvalue="Node.js.manageCategory.js" />
       </list>
     </recent_temporary>
@@ -201,24 +226,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560009438115</updated>
-      <workItem from="1560009442232" duration="15089000" />
+      <workItem from="1560009442232" duration="16031000" />
+      <workItem from="1560026494186" duration="20103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15089000" />
+    <option name="totallyTimeSpent" value="36134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14434524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -226,6 +248,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -235,32 +261,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/assets/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/manage-posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="231" column="138" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="138" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#10064#10070#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/add-category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3162">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/assets/js/test.js" />
     <entry file="file://$PROJECT_DIR$/admin/assets/json/category.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -280,14 +281,117 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/manage-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="132" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/manage-role.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="133" column="26" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#2;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#2;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#5;n#tr#2;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#6;n#tr#2;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#4;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#5;n#tr#4;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#6;n#tr#4;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#6;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#6;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#6;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#5;n#tr#6;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#6;n#tr#6;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#8;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#8;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#8;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#5;n#tr#8;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#6;n#tr#8;n#tbody#0;n#table#0;n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/manage-categories.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="323" column="34" selection-start-line="323" selection-start-column="34" selection-end-line="323" selection-end-column="34" />
+        <state relative-caret-position="294">
+          <caret line="133" column="26" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add-category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="136" column="26" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="137" column="26" selection-start-line="137" selection-start-column="26" selection-end-line="137" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#0;n#div#4;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add-role.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="136" column="26" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add-post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="265" column="110" selection-start-line="265" selection-start-column="110" selection-end-line="265" selection-end-column="110" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/manage-posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="234" column="13" selection-start-line="234" selection-start-column="13" selection-end-line="234" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

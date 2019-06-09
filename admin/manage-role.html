@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title> | Manage Categories</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
+        <script src="assets/js/modernizr.min.js"></script>
+		<script src="assets/js/manageCategory.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="index.html" class="logo"><span>NEWS<span>PORTAL</span></span><i class="mdi mdi-layers"></i></a>
+                    <!-- Image logo -->
+                    <!--<a href="index.html" class="logo">-->
+                        <!--<span>-->
+                            <!--<img src="assets/images/logo.png" alt="" height="30">-->
+                        <!--</span>-->
+                        <!--<i>-->
+                            <!--<img src="assets/images/logo_sm.png" alt="" height="28">-->
+                        <!--</i>-->
+                    <!--</a>-->
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+
+                        <!-- Navbar-left -->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <button class="button-menu-mobile open-left waves-effect">
+                                    <i class="mdi mdi-menu"></i>
+                                </button>
+                            </li>
+                     
+                    
+                        </ul>
+
+                        <!-- Right(Notification) -->
+                        <ul class="nav navbar-nav navbar-right">
+                          
+
+                            <li class="dropdown user-box">
+                                <a href="" class="dropdown-toggle waves-effect user-link" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle user-img">
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
+                                    <li>
+                                        <h5>Hi, Admin</h5>
+                                    </li>
+                              
+                                    <li><a href="#"><i class="ti-settings m-r-5"></i> Change Password</a></li>
+                           
+                                    <li><a href="index.html"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+
+                        </ul> <!-- end navbar-right -->
+
+                    </div><!-- end container -->
+                </div><!-- end navbar -->
+            </div>
+
+            <!-- ========== Left Sidebar Start ========== -->
+             <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <ul>
+                            <li class="menu-title">Navigation</li>
+
+                            <li class="has_sub">
+                                <a href="dashboard.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+
+                            </li>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>User </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-user.html">Create User</a></li>
+                                    <li><a href="manage-user.html">Manage User</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Role </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-role.html">Create Role</a></li>
+                                    <li><a href="manage-role.html">Manage Role</a></li>
+                                    <li><a href="#">Assign Role</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Category </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-category.html">Create Category</a></li>
+                                    <li><a href="manage-categories.html">Manage Category</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Post </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-post.html">Create Posts</a></li>
+                                    <li><a href="manage-posts.html">Manage Posts</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> File & Folder </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+
+                                </ul>
+                            </li>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+               
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+                
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+
+                        <div class="row">
+							<div class="col-xs-12">
+								<div class="page-title-box">
+                                    <h4 class="page-title">Manage Role</h4>
+                                    <ol class="breadcrumb p-0 m-0">
+                                        <li>
+                                            <a href="dashboard.html">Admin</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Role </a>
+                                        </li>
+                                        <li class="active">
+                                           Manage Role
+                                        </li>
+                                    </ol>
+                                    <div class="clearfix"></div>
+                                </div>
+							</div>
+						</div>
+                        <!-- end row -->
+
+
+<div class="row">
+<div class="col-sm-6">  
+ 
+
+
+
+
+</div>
+                                 
+
+                                    <div class="row">
+										<div class="col-md-12">
+											<div class="demo-box m-t-20">
+<div class="m-b-30">
+<a href="add-role.html">
+<button id="addToTable" class="btn btn-success waves-effect waves-light">Add <i class="mdi mdi-plus-circle-outline" ></i></button>
+</a>
+ </div>
+
+												<div class="table-responsive">
+                                                    <table class="table m-0 table-colored-bordered table-bordered-primary" id = "tblRole">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th> Role</th>
+                                                                <th>Description</th>
+                                                                <th>Created at</th>
+                                                                <th>Last updated at</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Admin</th>
+                                                                <th>Full access</th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th>
+                                                                    <a data-toggle="modal"  class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+                                                                    <a data-toggle="modal" onclick="alert('You can not edit this field')" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+                                                                    <a class="btn btn-danger btn-xs" onclick="alert('You can not delete this field')" ><i
+                                                                            class="fa fa-trash-o"></i>  </a>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Editor</th>
+                                                                <th>View, create, edit and delete posts</th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th>
+                                                                    <a data-toggle="modal" data-target="#viewPrivilege" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+                                                                    <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+                                                                    <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
+                                                                            class="fa fa-trash-o"></i>  </a>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>User</th>
+                                                                <th>View post</th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th>
+                                                                    <a data-toggle="modal" data-target="#viewPrivilege" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+                                                                    <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+                                                                    <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
+                                                                            class="fa fa-trash-o"></i>  </a>
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+													
+                                                </div>
+
+
+
+
+											</div>
+
+										</div>
+
+							
+									</div>
+                                    <!--- end row -->
+
+
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                   2018 © Developed by Hanuer
+                </footer>
+
+            </div>
+
+        </div>
+        <!-- END wrapper -->
+        <div class="modal fade" id="editRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">×</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Edit Role</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label>Role Name</label>
+                                <input type="text" class="form-control" value="Editor">
+                            </div>
+                            <div class="form-group">
+                                <label>Role Description </label>
+                                <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6"
+                                       data-validate-words="2" name="name" value="Manage Category and Post" required="required"
+                                       type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <table class="table table-striped projects">
+                                    <thead>
+                                    <tr>
+                                        <th style="width: 5%">#</th>
+                                        <th style="width: 15%">Role name</th>
+                                        <th style="width: 5%">Check all</th>
+                                        <th style="width: 1%">Create</th>
+                                        <th style="width: 1%">View</th>
+                                        <th style="width: 1%">Update</th>
+                                        <th style="width: 1%">Delete</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>#</td>
+                                        <td>
+                                            <a>Manage Role</a>
+                                            <br>
+                                            <small></small>
+                                        <td style="text-align: center">
+                                            <ul class="list-inline">
+                                                <p><input type="checkbox" id="select_all1" /></p>
+                                            </ul>
+                                        </td>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <ul class="list-inline">
+                                                <p><input type="checkbox" class="checkbox1" value="1" /></p>
+                                            </ul>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox1" value="2" /></p>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox1" value="3" /></p>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox1" value="4" /></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    <tr>
+                                        <td>#</td>
+                                        <td>
+                                            <a>Manage User</a>
+                                            <br>
+                                            <small></small>
+                                        <td style="text-align: center">
+                                            <ul class="list-inline">
+                                                <p><input type="checkbox" id="select_all2" /></p>
+                                            </ul>
+                                        </td>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <ul class="list-inline">
+                                                <p><input type="checkbox" class="checkbox2" value="1" /></p>
+                                            </ul>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox2" value="2" /></p>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox2" value="3" /></p>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox2" value="4" /></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    <tr>
+                                        <td>#</td>
+                                        <td>
+                                            <a>Manage Category</a>
+                                            <br>
+                                            <small></small>
+                                        <td style="text-align: center">
+                                            <ul class="list-inline">
+                                                <p><input type="checkbox" id="select_all3" checked /></p>
+                                            </ul>
+                                        </td>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <ul class="list-inline">
+                                                <p><input type="checkbox" class="checkbox3" value="1" checked /></p>
+                                            </ul>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox3" value="2" checked /></p>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox3" value="3" checked /></p>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox3" value="4" checked /></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    <tr>
+                                        <td>#</td>
+                                        <td>
+                                            <a>Manage Post</a>
+                                            <br>
+                                            <small></small>
+                                        <td style="text-align: center">
+                                            <ul class="list-inline">
+                                                <p><input type="checkbox" id="select_all4" checked /></p>
+                                            </ul>
+                                        </td>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <ul class="list-inline">
+                                                <p><input type="checkbox" class="checkbox4" value="1" checked /></p>
+                                            </ul>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox4" value="2" checked /></p>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox4" value="3" checked /></p>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox4" value="4" checked /></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    <tr>
+                                        <td>#</td>
+                                        <td>
+                                            <a>Manage Material</a>
+                                            <br>
+                                            <small></small>
+                                        <td style="text-align: center">
+                                            <ul class="list-inline">
+                                                <p><input type="checkbox" id="select_all5" /></p>
+                                            </ul>
+                                        </td>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <ul class="list-inline">
+                                                <p><input type="checkbox" class="checkbox5" value="1" /></p>
+                                            </ul>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox5" value="2" /></p>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox5" value="3" /></p>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <p><input type="checkbox" class="checkbox5" value="4" /></p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" onclick="updateConfirm()" class="btn btn-success"
+                                    data-dismiss="modal">Update</button>
+                        </div>
+                        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="../plugins/switchery/switchery.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+    </body>
+</html>
+<!--<script>-->
+<!--    $(document).ready(function () {-->
+<!--       $.getJSON("assets/json/category.json", function (data) {-->
+<!--           let category_data = '';-->
+<!--           $.each(data, function (key, value) {-->
+<!--               category_data += '<tr>';-->
+<!--               category_data += '<td>'+ value.id+'</td>';-->
+<!--               category_data += '<td>'+ value.category+'</td>';-->
+<!--               category_data += '<td>'+ value.description+'</td>';-->
+<!--               category_data += '<td>'+ value.creatAt+'</td>';-->
+<!--               category_data += '<td>'+ value.updateAt+'</td>';-->
+<!--               category_data += '<td> <a href="#"><i class="fa fa-pencil" style="color: #29b6f6;"  onclick="onEdit(this)"></i></a>\n                       ' +-->
+<!--                   '&nbsp;<a href="#" > <i class="fa fa-trash-o" style="color: #f05050" onclick="onDelete(this)"></i></a></td>';-->
+<!--               category_data += '</tr>';-->
+
+
+<!--           });-->
+<!--           $('#tblCategory').append(category_data);-->
+
+<!--       });-->
+<!--    });-->
+<!--</script>-->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#select_all1').on('click', function () {
+            if (this.checked) {
+                $('.checkbox1').each(function () {
+                    this.checked = true;
+                });
+            } else {
+                $('.checkbox1').each(function () {
+                    this.checked = false;
+                });
+            }
+        });
+
+        $('.checkbox1').on('click', function () {
+            if ($('.checkbox1:checked').length == $('.checkbox1').length) {
+                $('#select_all1').prop('checked', true);
+            } else {
+                $('#select_all1').prop('checked', false);
+            }
+        });
+    });
+</script>
+<script>
+    function deleteRow(td,id) {
+        let text = confirm("Do you want to delete this field?");
+        if (text == true) {
+            row = td.parentElement.parentElement;
+            document.getElementById("tblRole").deleteRow(row.rowIndex);
+        }
+        return true;
+    }
+</script>

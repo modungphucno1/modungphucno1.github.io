@@ -1,23 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
-        <meta name="author" content="Coderthemes">
 
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-        <!-- App title -->
-        <title>Newsportal | Manage Posts</title>
-
-        <!--Morris Chart CSS -->
-		<link rel="stylesheet" href="../plugins/morris/morris.css">
-
-        <!-- jvectormap -->
-        <link href="../plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
-
-        <!-- App css -->
+        <title> News | Manage Author</title>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
@@ -26,14 +12,6 @@
         <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
-
-        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-
         <script src="assets/js/modernizr.min.js"></script>
 
     </head>
@@ -45,7 +23,7 @@
         <div id="wrapper">
 
             <!-- Top Bar Start -->
-                       <div class="topbar">
+            <div class="topbar">
 
                 <!-- LOGO -->
                 <div class="topbar-left">
@@ -103,49 +81,49 @@
             </div>
 
             <!-- ========== Left Sidebar Start ========== -->
-            <div class="left side-menu">
+                       <div class="left side-menu">
                 <div class="sidebar-inner slimscrollleft">
 
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
                         <ul>
-                            <li class="menu-title">Navigation</li>
+                        	<li class="menu-title">Navigation</li>
 
                             <li class="has_sub">
                                 <a href="dashboard.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
-
+                         
                             </li>
-                            <li class="has_sub">
+							<li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>User </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href="add-user.html">Create User</a></li>
                                     <li><a href="manage-user.html">Manage User</a></li>
                                 </ul>
-                            </li>
-                            <li class="has_sub">
+                            </li>   
+														<li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Role </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href="add-role.html">Create Role</a></li>
                                     <li><a href="manage-role.html">Manage Role</a></li>
-                                    <li><a href="#">Assign Role</a></li>
+									<li><a href="#">Assign Role</a></li>
                                 </ul>
-                            </li>
+                            </li>   
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Category </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="add-category.html">Create Category</a></li>
+                                	<li><a href="add-category.html">Create Category</a></li>
                                     <li><a href="manage-categories.html">Manage Category</a></li>
                                 </ul>
                             </li>
-
-                            <li class="has_sub">
+            
+							<li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Post </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
                                     <li><a href="add-post.html">Create Posts</a></li>
                                     <li><a href="manage-posts.html">Manage Posts</a></li>
-
+                                     
                                 </ul>
-                            </li>
+                            </li>  
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> File & Folder </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
@@ -164,6 +142,9 @@
             </div>
                 
 
+            </div>
+            <!-- Left Sidebar End -->
+
 
 
             <!-- ============================================================== -->
@@ -178,16 +159,16 @@
                         <div class="row">
 							<div class="col-xs-12">
 								<div class="page-title-box">
-                                    <h4 class="page-title">Manage Posts </h4>
+                                    <h4 class="page-title">Manage User</h4>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
                                             <a href="#">Admin</a>
                                         </li>
                                         <li>
-                                            <a href="#">Posts</a>
+                                            <a href="#">User </a>
                                         </li>
                                         <li class="active">
-                                            Manage Post  
+                                           Manage Users
                                         </li>
                                     </ol>
                                     <div class="clearfix"></div>
@@ -197,74 +178,79 @@
                         <!-- end row -->
 
 
+<div class="row">
+<div class="col-sm-6">  
 
+</div>
 
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="card-box">
-                         
+                                    <div class="row">
+										<div class="col-md-12">
+											<div class="demo-box m-t-20">
+<div class="m-b-30">
+<a href="add-user.html">
+<button id="addToTable" class="btn btn-success waves-effect waves-light">Add <i class="mdi mdi-plus-circle-outline" ></i></button>
+</a>
+ </div>
 
-                                    <div class="table-responsive">
-<table class="table table-colored table-centered table-inverse m-0">
-<thead>
+												<div class="table-responsive">
+                                                    <table class="table m-0 table-colored-bordered table-bordered-primary list" id = "userList">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Id</th>
+                                                                <th>UserName</th>
+                                                                <th>Password</th>
+                                                                <th>Phone</th>
+                                                                <th>Email</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
 <tr>
-    <th>#</th>
-<th>Title</th>
-<th>Introduction</th>
-<th>Author</th>
-<th>Content</th>
-    <th>Status</th>
-    <th>Category</th>
-    <th>Action</th>
-</tr>
-</thead>
-<tbody>
 
-
+<td colspan="7" align="center"><h3 style="color:red">No record found</h3></td>
 <tr>
 
-<td colspan="4" align="center"><h3 style="color:red">No record found</h3></td>
-<tr>
+
+
+
 
  <tr>
-<td><b></b></td>
-    <td></td>
+<th scope="row"></th>
+<td></td>
+<td></td>
 <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-<td><a href="#"><i class="fa fa-pencil" style="color: #29b6f6;"></i></a> 
-    &nbsp;<a href="#" onclick="return confirm('Do you really want to delete ?')"> <i class="fa fa-trash-o" style="color: #f05050"></i></a> </td>
- </tr>
 
-                                               
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<td>		<a href=""><i class="fa fa-pencil" style="color: #29b6f6;"></i></a> 
+	&nbsp;<a href=""> <i class="fa fa-trash-o" style="color: #f05050"></i></a> </td>
+</tr>
 
+</tbody>
+                                                  
+                                                    </table>
+                                                </div>
 
+											</div>
+
+										</div>
+
+							
+									</div>
+                                    <!--- end row -->
+                         
 
                     </div> <!-- container -->
 
                 </div> <!-- content -->
 
-       
                 <footer class="footer text-right">
                    2018 © Developed by Hanuer
                 </footer>
 
-
             </div>
-
-
-            <!-- ============================================================== -->
-            <!-- End Right content here -->
-            <!-- ============================================================== -->
-
 
         </div>
         <!-- END wrapper -->
@@ -285,24 +271,6 @@
         <script src="assets/js/jquery.slimscroll.js"></script>
         <script src="assets/js/jquery.scrollTo.min.js"></script>
         <script src="../plugins/switchery/switchery.min.js"></script>
-
-        <!-- CounterUp  -->
-        <script src="../plugins/waypoints/jquery.waypoints.min.js"></script>
-        <script src="../plugins/counterup/jquery.counterup.min.js"></script>
-
-        <!--Morris Chart-->
-		<script src="../plugins/morris/morris.min.js"></script>
-		<script src="../plugins/raphael/raphael-min.js"></script>
-
-        <!-- Load page level scripts-->
-        <script src="../plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
-        <script src="../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-        <script src="../plugins/jvectormap/gdp-data.js"></script>
-        <script src="../plugins/jvectormap/jquery-jvectormap-us-aea-en.js"></script>
-
-
-        <!-- Dashboard Init js -->
-		<script src="assets/pages/jquery.blog-dashboard.js"></script>
 
         <!-- App js -->
         <script src="assets/js/jquery.core.js"></script>
