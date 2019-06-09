@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "category" : "LIFESTYLE",
+      "description" : "Something about life",
+      "createAt":"",
+      "updateAt":""
+    },
+    {
+      "id": 2,
+      "category" : "TECHNOLOGY",
+      "description" : "Something about technology",
+      "createAt":"",
+      "updateAt":""
+    },
+    {
+      "id": 3,
+      "category" : "FASHION",
+      "description" : "Something about fashion",
+      "createAt":"22/8/1998",
+      "updateAt":""
+    }
+  ]
+
