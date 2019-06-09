@@ -1,228 +1,194 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
-        <meta name="author" content="Coderthemes">
+<head>
 
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-        <!-- App title -->
-        <title>Newsportal | Add Post</title>
+    <title>Newsportal | Add New Post</title>
 
-        <!-- Summernote css -->
-        <link href="../plugins/summernote/summernote.css" rel="stylesheet" />
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
+    <link href="assets/css/editor.css" type="text/css" rel="stylesheet"/>
 
-        <!-- Select2 -->
-        <link href="../plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/editor.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#txtEditor").Editor();
+        });
+    </script>
 
-        <!-- Jquery filer css -->
-        <link href="../plugins/jquery.filer/css/jquery.filer.css" rel="stylesheet" />
-        <link href="../plugins/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css" rel="stylesheet" />
-
-        <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
-		<link href="assets/css/editor.css" type="text/css" rel="stylesheet"/>
-        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
-
-        <!-- include summernote css/js -->
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
-		
-<script src="assets/js/modernizr.min.js"></script>
-
-  <script>
-			$(document).ready(function() {
-				$("#txtEditor").Editor();
-			});
-		</script>
-		<script src="assets/js/editor.js"></script>
-    </head>
+</head>
 
 
-    <body class="fixed-left">
+<body class="fixed-left">
 
-        <!-- Begin page -->
-        <div id="wrapper">
+<!-- Begin page -->
+<div id="wrapper">
 
-            <!-- Top Bar Start -->
-                       <div class="topbar">
+    <!-- Top Bar Start -->
+    <div class="topbar">
 
-                <!-- LOGO -->
-                <div class="topbar-left">
-                    <a href="index.html" class="logo"><span>NEWS<span>PORTAL</span></span><i class="mdi mdi-layers"></i></a>
-                    <!-- Image logo -->
-                    <!--<a href="index.html" class="logo">-->
-                        <!--<span>-->
-                            <!--<img src="assets/images/logo.png" alt="" height="30">-->
-                        <!--</span>-->
-                        <!--<i>-->
-                            <!--<img src="assets/images/logo_sm.png" alt="" height="28">-->
-                        <!--</i>-->
-                    <!--</a>-->
-                </div>
+        <!-- LOGO -->
+        <div class="topbar-left">
+            <a href="index.html" class="logo"><span>NEWS<span>PORTAL</span></span><i class="mdi mdi-layers"></i></a>
+            <!-- Image logo -->
+            <!--<a href="index.html" class="logo">-->
+            <!--<span>-->
+            <!--<img src="assets/images/logo.png" alt="" height="30">-->
+            <!--</span>-->
+            <!--<i>-->
+            <!--<img src="assets/images/logo_sm.png" alt="" height="28">-->
+            <!--</i>-->
+            <!--</a>-->
+        </div>
 
-                <!-- Button mobile view to collapse sidebar menu -->
-                <div class="navbar navbar-default" role="navigation">
-                    <div class="container">
+        <!-- Button mobile view to collapse sidebar menu -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
 
-                        <!-- Navbar-left -->
-                        <ul class="nav navbar-nav navbar-left">
+                <!-- Navbar-left -->
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <button class="button-menu-mobile open-left waves-effect">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </li>
+
+
+                </ul>
+
+                <!-- Right(Notification) -->
+                <ul class="nav navbar-nav navbar-right">
+
+
+                    <li class="dropdown user-box">
+                        <a href="" class="dropdown-toggle waves-effect user-link" data-toggle="dropdown" aria-expanded="true">
+                            <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle user-img">
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
                             <li>
-                                <button class="button-menu-mobile open-left waves-effect">
-                                    <i class="mdi mdi-menu"></i>
-                                </button>
+                                <h5>Hi, Admin</h5>
                             </li>
-                     
-                    
+
+                            <li><a href="#"><i class="ti-settings m-r-5"></i> Change Password</a></li>
+
+                            <li><a href="index.html"><i class="ti-power-off m-r-5"></i> Logout</a></li>
                         </ul>
+                    </li>
 
-                        <!-- Right(Notification) -->
-                        <ul class="nav navbar-nav navbar-right">
-                          
+                </ul> <!-- end navbar-right -->
 
-                            <li class="dropdown user-box">
-                                <a href="" class="dropdown-toggle waves-effect user-link" data-toggle="dropdown" aria-expanded="true">
-                                    <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle user-img">
-                                </a>
+            </div><!-- end container -->
+        </div><!-- end navbar -->
+    </div>
+    <!-- Top Bar End -->
 
-                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
-                                    <li>
-                                        <h5>Hi, Admin</h5>
-                                    </li>
-                              
-                                    <li><a href="#"><i class="ti-settings m-r-5"></i> Change Password</a></li>
-                           
-                                    <li><a href="index.html"><i class="ti-power-off m-r-5"></i> Logout</a></li>
-                                </ul>
-                            </li>
 
-                        </ul> <!-- end navbar-right -->
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="left side-menu">
+        <div class="sidebar-inner slimscrollleft">
 
-                    </div><!-- end container -->
-                </div><!-- end navbar -->
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+                <ul>
+                    <li class="menu-title">Navigation</li>
+
+                    <li class="has_sub">
+                        <a href="dashboard.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+
+                    </li>
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>User </span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="add-user.html">Create User</a></li>
+                            <li><a href="manage-user.html">Manage User</a></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Role </span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="add-role.html">Create Role</a></li>
+                            <li><a href="manage-role.html">Manage Role</a></li>
+                            <li><a href="#">Assign Role</a></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Category </span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="add-category.html">Create Category</a></li>
+                            <li><a href="manage-categories.html">Manage Category</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Post </span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="add-post.html">Create Posts</a></li>
+                            <li><a href="manage-posts.html">Manage Posts</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> File & Folder </span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <!-- ========== Left Sidebar Start ========== -->
-            <div class="left side-menu">
-                <div class="sidebar-inner slimscrollleft">
+            <!-- Sidebar -->
+            <div class="clearfix"></div>
 
-                    <!--- Sidemenu -->
-                    <div id="sidebar-menu">
-                        <ul>
-                            <li class="menu-title">Navigation</li>
 
-                            <li class="has_sub">
-                                <a href="dashboard.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
 
-                            </li>
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>User </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="add-user.html">Create User</a></li>
-                                    <li><a href="manage-user.html">Manage User</a></li>
-                                </ul>
-                            </li>
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Role </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="add-role.html">Create Role</a></li>
-                                    <li><a href="manage-role.html">Manage Role</a></li>
-                                    <li><a href="#">Assign Role</a></li>
-                                </ul>
-                            </li>
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Category </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="add-category.html">Create Category</a></li>
-                                    <li><a href="manage-categories.html">Manage Category</a></li>
-                                </ul>
-                            </li>
+        </div>
+        <!-- Sidebar -left -->
 
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Post </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="add-post.html">Create Posts</a></li>
-                                    <li><a href="manage-posts.html">Manage Posts</a></li>
+    </div>
 
-                                </ul>
-                            </li>
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> File & Folder </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
+    <!-- Sidebar -left -->
 
-                                </ul>
+</div>
+<!-- Left Sidebar End -->
+
+<div class="content-page">
+    <!-- Start content -->
+    <div class="content">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title-box">
+                        <h4 class="page-title"> Post</h4>
+                        <ol class="breadcrumb p-0 m-0">
+                            <li>
+                                <a href="#">Admin</a>
                             </li>
+                            <li>
+                                <a href="#">Post </a>
+                            </li>
+                            <li class="active">
+                                Create Post
+                            </li>
+                        </ol>
+                        <div class="clearfix"></div>
                     </div>
-                    <!-- Sidebar -->
-                    <div class="clearfix"></div>
-
-               
-
                 </div>
-                <!-- Sidebar -left -->
-
             </div>
-                
-                <!-- Sidebar -left -->
-
-            </div>
-            <!-- Left Sidebar End -->
+            <!-- end row -->
 
 
-
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="content-page">
-                <!-- Start content -->
-                <div class="content">
-                    <div class="container">
-
-
-                        <div class="row">
-							<div class="col-xs-12">
-								<div class="page-title-box">
-                                    <h4 class="page-title">Create Post </h4>
-                                    <ol class="breadcrumb p-0 m-0">
-                                        <li>
-                                            <a href="#">Admin</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Post </a>
-                                        </li>
-                                        <li class="active">
-                                            Create Post
-                                        </li>
-                                    </ol>
-                                    <div class="clearfix"></div>
-                                </div>
-							</div>
-						</div>
-                        <!-- end row -->
-
-<div class="row">
-<div class="col-sm-6">  
-<!---Success Message--->  
-
-
-<!---Error Message--->
-
-
-
-</div>
-</div>
-
+            <div class="row">
+                <div class="col-sm-12">
 
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -231,10 +197,8 @@
 
                                         <form class="form-horizontal form-label-left" id = "myForm"  novalidate >
 
-
-
                                             <div class="item form-group">
-                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Title <span class="required">*</span>
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Title <span class="required">*</span>
                                                 </label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                                     <input id="title" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" name="Thao" required="required" type="text" placeholder="Input title here">
@@ -242,14 +206,14 @@
                                             </div>
 
                                             <div class="item form-group">
-                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Short Intro <span class="required">*</span>
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" >Summary <span class="required">*</span>
                                                 </label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                                     <input id="intro" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Input introduction here" required="required" type="text">
                                                 </div>
                                             </div>
                                             <div class="item form-group">
-                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Written by <span class="required">*</span>
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" >Written by <span class="required">*</span>
                                                 </label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                                     <input id="write" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Author name" required="required" type="text">
@@ -262,19 +226,15 @@
                                                 <div class="clearfix"></div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-lg-12 nopadding">
-                                                    <textarea id="txtEditor" style = "resize: none" rows = "10" cols="150"></textarea>
+                                                <div class="col-lg-12 nopadding" id="txtEditor">
+                                                    <textarea   rows = "10" cols="130"></textarea>
                                                 </div>
                                             </div>
-<script>
-    $(document).ready(function() {
-        $('#summernote').summernote();
-    });
-</script>
+
                                             <div class="form-group">
                                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Status</label>
                                                 <div class="col-md-9 col-sm-9 col-xs-12">
-                                                    <select type="button" class="btn btn-info btn-xl">
+                                                    <select type="button" class="btn btn-info btn-sm">
                                                         <option value="0">Published</option>
                                                         <option value="1">Draft</option>
                                                     </select>
@@ -284,108 +244,85 @@
                                             <div class="form-group">
                                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Category</label>
                                                 <div class="col-md-9 col-sm-9 col-xs-12">
-                                                    <select type="button" class="btn btn-info btn-xl">
-                                                        <option value="0">LIFESTYLE</option>
-                                                        <option value="1">TECHNOLOGY</option>
-                                                        <option value="2">FASHION</option>
+                                                    <select type="button" class="btn btn-info btn-sm">
+                                                        <option value="0">JAVA</option>
+                                                        <option value="1">PHP</option>
+                                                        <option value="2">JAVASCRIPT</option>
+                                                        <option value="2">HTML</option>
+                                                        <option value="2">CSS</option>
                                                     </select>
                                                 </div>
                                             </div>
-                                </div>
-                            </div>
-                                </form>
-                                <div class="form-group" style="text-align: center; margin-bottom: 40px">
-                                    <div class="col-md-6 col-md-offset-3">
-                                        <button type="button" class="btn btn-success" onclick="createPost()">Create</button>
-                                        <button type="button" class="btn btn-info" onclick="reset()">Reset</button>
-                                        <a href="viewpost.html"><button type="button" class="btn btn-danger">Cancel</button></a>
                                     </div>
                                 </div>
 
+                                <div class="form-group" style="text-align: center; margin-bottom: 40px">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <button type="button" class="btn btn-success" onclick="createPost()">Create</button>
+                                        <button type="button" class="btn btn-danger" onclick="reset()">Reset</button>
+
+                                    </div>
+                                </div>
+                                </form>
                             </div>
-                        </div><!-- end col -->
                         </div>
-                        <!-- end row -->
+
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!---Success Message--->
+
+
+                                <!---Error Message--->
+
+
+
+                            </div>
+                        </div>
+
 
                 </div>
-
-                    </div> <!-- container -->
-
-                </div> <!-- content -->
-
-           
-                <footer class="footer text-right">
-                   2018 © Developed by Hanuer
-                </footer>
+                <!-- end row -->
 
 
-            </div>
+            </div> <!-- container -->
+
+        </div> <!-- content -->
 
 
-            <!-- ============================================================== -->
-            <!-- End Right content here -->
-            <!-- ============================================================== -->
+        <footer class="footer text-right">
+            2018 © Developed by Hanuer
+        </footer>
 
 
-        </div>
-        <!-- END wrapper -->
+    </div>
 
 
 
-        <script>
-            var resizefunc = [];
-        </script>
 
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/detect.js"></script>
-        <script src="assets/js/fastclick.js"></script>
-        <script src="assets/js/jquery.blockUI.js"></script>
-        <script src="assets/js/waves.js"></script>
-        <script src="assets/js/jquery.slimscroll.js"></script>
-        <script src="assets/js/jquery.scrollTo.min.js"></script>
-        <script src="../plugins/switchery/switchery.min.js"></script>
-
-        <!--Summernote js-->
-        <script src="../plugins/summernote/summernote.min.js"></script>
-        <!-- Select 2 -->
-        <script src="../plugins/select2/js/select2.min.js"></script>
-        <!-- Jquery filer js -->
-        <script src="../plugins/jquery.filer/js/jquery.filer.min.js"></script>
-
-        <!-- page specific js -->
-        <script src="assets/pages/jquery.blog-add.init.js"></script>
-
-        <!-- App js -->
-        <script src="assets/js/jquery.core.js"></script>
-        <script src="assets/js/jquery.app.js"></script>
-
-        <script>
-
-            jQuery(document).ready(function(){
-
-                $('.summernote').summernote({
-                    height: 240,                 // set editor height
-                    minHeight: null,             // set minimum height of editor
-                    maxHeight: null,             // set maximum height of editor
-                    focus: false                 // set focus to editable area after initializing summernote
-                });
-                // Select2
-                $(".select2").select2();
-
-                $(".select2-limiting").select2({
-                    maximumSelectionLength: 2
-                });
-            });
-        </script>
-  <script src="../plugins/switchery/switchery.min.js"></script>
-
-        <!--Summernote js-->
-        <script src="../plugins/summernote/summernote.min.js"></script>
-
-    
+</div>
+<!-- END wrapper -->
 
 
-    </body>
+
+<script>
+    var resizefunc = [];
+</script>
+
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/detect.js"></script>
+<script src="assets/js/fastclick.js"></script>
+<script src="assets/js/jquery.blockUI.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+<script src="../plugins/switchery/switchery.min.js"></script>
+
+<!-- App js -->
+<script src="assets/js/jquery.core.js"></script>
+<script src="assets/js/jquery.app.js"></script>
+
+</body>
 </html>

@@ -130,6 +130,7 @@
 
                                 </ul>
                             </li>
+                        </ul>
                     </div>
                     <!-- Sidebar -->
                     <div class="clearfix"></div>
@@ -193,40 +194,76 @@
  </div>
 
 												<div class="table-responsive">
-                                                    <table class="table m-0 table-colored-bordered table-bordered-primary list" id = "userList">
+                                                    <table class="table m-0 table-colored-bordered table-bordered-primary list" id = "tblUser">
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
-                                                                <th>Id</th>
                                                                 <th>UserName</th>
                                                                 <th>Password</th>
                                                                 <th>Phone</th>
                                                                 <th>Email</th>
+                                                                <th>Role</th>
+                                                                <th>Status</th>
                                                                 <th>Action</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-
-<tr>
-
-<td colspan="7" align="center"><h3 style="color:red">No record found</h3></td>
-<tr>
-
-
-
-
-
  <tr>
-<th scope="row"></th>
-<td></td>
-<td></td>
-<td></td>
-    <td></td>
-    <td></td>
+<th scope="row">#</th>
+    <td>tannm.hanu <br> <small>Created at: 20/08/2018</small></td>
+    <td> 202cb962ac59075b964b07152d234b70 <br> <small>Last update at: 22/12/2018</small></td>
+    <td>0388126591</td>
+     <td>tannm.hanu@gmail.com</td>
+    <td >Admin</td>
+     <td><button class="btn btn-success btn-xs">Activated</button></td>
 
-<td>		<a href=""><i class="fa fa-pencil" style="color: #29b6f6;"></i></a> 
-	&nbsp;<a href=""> <i class="fa fa-trash-o" style="color: #f05050"></i></a> </td>
+<td>	<a data-toggle="modal" data-target="#view" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+    <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+    <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
+            class="fa fa-trash-o"></i>  </a> </td>
 </tr>
+ <tr>
+     <th scope="row">#</th>
+     <td>sonpt.hanu <br> <small>Created at: 22/08/2018</small></td>
+     <td> d24cd8df8f41b05ae77d80189644aaee <br> <small>Last update at: 19/10/2018</small></td>
+     <td>0312689452</td>
+     <td>tanpt.hanu@gmail.com</td>
+     <td >Admin</td>
+     <td><button class="btn btn-danger btn-xs">Deactivated</button></td>
+
+     <td>	<a data-toggle="modal" data-target="#view" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+         <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+         <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
+                 class="fa fa-trash-o"></i>  </a> </td>
+ </tr>
+ <tr>
+     <th scope="row">#</th>
+     <td>sondh.hanu <br> <small>Created at: 21/01/2019</small></td>
+     <td> 7b064dad507c266a161ffc73c53dcdc5 <br> <small>Last update at: 22/04/2019</small></td>
+     <td>0388126591</td>
+     <td>sondh.hanu@gmail.com</td>
+     <td >Editor</td>
+     <td><button class="btn btn-success btn-xs">Activated</button></td>
+
+     <td>	<a data-toggle="modal" data-target="#view" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+         <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+         <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
+                 class="fa fa-trash-o"></i>  </a> </td>
+ </tr>
+ <tr>
+     <th scope="row">#</th>
+     <td>huynhnd.hanu <br> <small>Created at: 20/08/2018</small></td>
+     <td> ac7cb832f5f2f6d795681d606291ba8f <br> <small>Last update at: 22/12/2018</small></td>
+     <td>0388126591</td>
+     <td>huynhnd.hanu@gmail.com</td>
+     <td >User</td>
+     <td><button class="btn btn-success btn-xs">Activated</button></td>
+
+     <td>	<a data-toggle="modal" data-target="#view" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+         <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+         <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
+                 class="fa fa-trash-o"></i>  </a> </td>
+ </tr>
 
 </tbody>
                                                   
@@ -253,7 +290,68 @@
             </div>
 
         </div>
+
         <!-- END wrapper -->
+
+        //view
+        <div id="view" class="modal fade" role="dialog" >
+            <div class="modal-dialog" >
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">User information</h4>
+                    </div>
+                    <div class="modal-body" >
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <div class="form-group">
+
+                                    <div class="form-group col-md-6">
+                                        <span class="left">Last name</span>
+                                            <span ><input type="text" class="form-control" value="Tan" name="username" required placeholder="Last name"></span>
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <span class="left">First name</span>
+                                        <span ><input type="text" class="form-control" value="Tan" name="username" required placeholder="First name"></span>
+
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <span class="left">Date of birth</span>
+                                        <span ><input type="date" class="form-control" value="" name="dob" required></span>
+
+                                    </div>
+                                    <div class="form-group col-md-10">
+                                        <span class="left">Address</span>
+                                        <span ><input type="text" class="form-control" value="" name="address" required placeholder="Address "></span>
+
+                                    </div>
+                                    <div class="form-group col-md-8">
+                                        <span class="left">Phone</span>
+                                        <span ><input type="text" class="form-control" value="" name="phone" required placeholder="Phone "></span>
+
+                                    </div>
+                                    <div class="form-group col-md-10">
+                                        <span class="left">Email</span>
+                                        <span ><input type="email" class="form-control" value="" name="email" required placeholder="Email "></span>
+
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
 
@@ -278,3 +376,13 @@
 
     </body>
 </html>
+<script>
+    function deleteRow(td) {
+        let text = confirm("Do you want to delete this field?");
+        if (text == true) {
+            let row = td.parentElement.parentElement;
+            document.getElementById("tblUser").deleteRow(row.rowIndex);
+        }
+        return true;
+    }
+</script>
