@@ -25,7 +25,7 @@
 function validate(){
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
-if ( username == "admin" && password == "admin"){
+if ( username == "editor" && password == "editor"){
 	return true;
 // Redirecting to other page.
 }else{
@@ -61,13 +61,13 @@ alert("Incorrect username or password");
 
                                         <div class="form-group ">
                                             <div class="col-xs-12">
-                                                <input id ="username" class="form-control" type="text" required="" name="username"  value = "admin">
+                                                <input id ="username" class="form-control" type="text" required="" name="username"  value = "editor">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <div class="col-xs-12">
-                                                <input id = "password" class="form-control" type="password" name="password"  value = "admin">
+                                                <input id = "password" class="form-control" type="password" name="password"  value = "editor">
                                             </div>
                                         </div>
                                         <div class="form-group account-btn text-center m-t-10">

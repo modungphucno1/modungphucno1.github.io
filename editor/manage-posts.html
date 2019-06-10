@@ -11,11 +11,7 @@
         <!-- App title -->
         <title>Newsportal | Manage Posts</title>
 
-        <!--Morris Chart CSS -->
-		<link rel="stylesheet" href="../plugins/morris/morris.css">
 
-        <!-- jvectormap -->
-        <link href="../plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -25,13 +21,10 @@
         <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
 
         <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
         <script src="assets/js/modernizr.min.js"></script>
@@ -49,7 +42,7 @@
 
                 <!-- LOGO -->
                 <div class="topbar-left">
-                    <a href="index.html" class="logo"><span>NEWS<span>PORTAL</span></span><i class="mdi mdi-layers"></i></a>
+                    <a href="dashboard.html" class="logo"><span>NEWS<span>PORTAL</span></span><i class="mdi mdi-layers"></i></a>
                     <!-- Image logo -->
                     <!--<a href="index.html" class="logo">-->
                         <!--<span>-->
@@ -87,7 +80,7 @@
 
                                 <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
                                     <li>
-                                        <h5>Hi, Admin</h5>
+                                        <h5>Hi, Editor</h5>
                                     </li>
                               
                                     <li><a href="#"><i class="ti-settings m-r-5"></i> Change Password</a></li>
@@ -127,7 +120,7 @@
                                 <ul class="list-unstyled">
                                     <li><a href="404error.html">Create Role</a></li>
                                     <li><a href="404error.html">Manage Role</a></li>
-                                    <li><a href="#">Assign Role</a></li>
+                                    <li><a href="404error.html">Assign Role</a></li>
                                 </ul>
                             </li>
                             <li class="has_sub">
@@ -139,22 +132,22 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Post </span> <span class="menu-arrow"></span></a>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Post </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    <li><a href="add-post.html">Create Posts</a></li>
-                                    <li><a href="manage-posts.html">Manage Posts</a></li>
+                                    <li><a href="404error.html">Create Posts</a></li>
+                                    <li><a href="404error.html">Manage Posts</a></li>
 
                                 </ul>
                             </li>
-                            <li >
-                                <a href="404error.html"><i class="mdi mdi-format-list-bulleted" ></i> <span> File & Folder </span> </a>
-
+                            <li class="has_sub">
+                                <a href="404error.html"><i class="mdi mdi-format-list-bulleted"></i> <span> File & Folder </span> </a>
                             </li>
+                        </ul>
                     </div>
                     <!-- Sidebar -->
                     <div class="clearfix"></div>
 
-
+               
 
                 </div>
                 <!-- Sidebar -left -->
@@ -179,7 +172,7 @@
                                     <h4 class="page-title">Manage Posts </h4>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
-                                            <a href="#">Admin</a>
+                                            <a href="dashboard.html">Admin</a>
                                         </li>
                                         <li>
                                             <a href="#">Posts</a>
@@ -203,38 +196,47 @@
                          
 
                                     <div class="table-responsive">
-<table class="table table-colored table-centered table-inverse m-0">
+<table class="table table-colored table-centered table-inverse m-0" id="tblPost">
 <thead>
 <tr>
-    <th>#</th>
-<th>Title</th>
-<th>Introduction</th>
-<th>Author</th>
-<th>Content</th>
+    <th >#</th>
+<th >Title</th>
+<th>Summary</th>
+<th >Author</th>
+    <th >Pic URL</th>
+    <th >Category</th>
     <th>Status</th>
-    <th>Category</th>
-    <th>Action</th>
+    <th style="width: 100px;">Action</th>
 </tr>
 </thead>
 <tbody>
 
-
 <tr>
-
-<td colspan="4" align="center"><h3 style="color:red">No record found</h3></td>
-<tr>
-
- <tr>
-<td><b></b></td>
-    <td></td>
-<td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-<td><a href="#"><i class="fa fa-pencil" style="color: #29b6f6;"></i></a> 
-    &nbsp;<a href="#" onclick="return confirm('Do you really want to delete ?')"> <i class="fa fa-trash-o" style="color: #f05050"></i></a> </td>
+<td>#</td>
+<td>How to implement Validation Form </td>
+<td>IoC ( I nversion o f C ontrol): Reverse control, it helps to change the control flow of the program flexibly.</td>
+    <td>Son DH</td>
+    <td>https://modungphucno1.github.io/front-end/img/ioc.png</td>
+    <td>PHP</td>
+<td><button class="btn btn-success btn-xs">Published</button></td>
+<td> <a data-toggle="modal" data-target="#post2" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+    <a data-toggle="modal" onclick="Redirect2();" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+    <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" ><i
+            class="fa fa-trash-o"></i>  </a> </td>
  </tr>
+<tr>
+    <th>#</th>
+    <th>Introduction to Android development</th>
+    <th>Android is a popular computing platform based on the Linux® operating system</th>
+    <th>Frank Ableson</th>
+    <th>https://developer.ibm.com/developer/articles/os-android-devel/images/fig02.png</th>
+    <th>JAVA</th>
+    <td><button class="btn btn-success btn-xs">Published</button></td>
+    <td> <a data-toggle="modal"  data-target="#post1" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+        <a data-toggle="modal"  onclick="Redirect();" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+        <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" ><i
+                class="fa fa-trash-o"></i>  </a> </td>
+</tr>
 
                                                
                                             </tbody>
@@ -266,7 +268,108 @@
 
         </div>
         <!-- END wrapper -->
+//post1
+        <div id="post1" class="modal fade" role="dialog">
+            <div class="modal-dialog">
 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Introduction to Android development</h4><br>
+                        <small>Updated at: 30/05/2018 | Published at: 15/05/2018 </small>
+                    </div>
+                    <div class="modal-body">
+                        <p>Android is a popular computing platform based on the Linux&reg; operating system. The initial commercial version of Android hit the market in 2008 in the form of a mobile phone platform, back when the most popular cell phone for a business user was the BlackBerry, when the iPhone was beginning to make meaningful waves across all sectors, and when the majority of phone users were still tapping out texts from a flip phone.</p>
+
+                        <p>Android has &ldquo;paid its dues,&rdquo; so to speak, in the smartphone market for the past decade. The success of Android and iPhone devices has rendered the one-time business mobile device market leader BlackBerry to be the subject of a Bruce Springsteen song: Glory Days. Interestingly, Android&rsquo;s unprecedented success has helped push BlackBerry into a diverse set of offerings, including shipping devices running the Android platform. (Kudos to the BlackBerry team for pivoting and adding value to their shareholders and the broader market despite experiencing the retreat of their earlier dominance.)</p>
+
+                        <p>In 10 years&rsquo; time, Android has effectively become the world&rsquo;s most popular operating system by a number of measures. Despite the robust popularity of the flashy and capable Apple iPhone platform, Android shipments worldwide meaningfully outpace Apple&rsquo;s offerings. While Apple&rsquo;s devices continue to demand an ever-increasing price point, Android devices scale the global marketplace. Yes, there are super-pricy Android models sitting next to the latest iPhone, but there are also relatively low-cost Android phones and tablets available for sale at Walmart and on Amazon.</p>
+
+                        <p>As Android has matured, it is finding its way into a variety of devices, including televisions, projectors, automobiles, and even recreational vehicles. Want to dim the lights in your camper or activate the awning? You can use the Android-based touchscreen interface to manipulate the controls. Or, use your smartphone equipped with Bluetooth to communicate with the RV&rsquo;s Android-based control system. There are many of these types of interfaces finding their way to the market. Some user experiences are simply fantastic (like drone controllers), and some are less than fantastic, like the controls in my uncle&rsquo;s RV. This article introduces the Android platform and discusses how you can use it for both mobile and non-mobile applications. The ambition is to get you on a path to making awesome apps for whatever platform arena you feel called to make your contribution.</p>
+
+                        <h2>A brief history of Android</h2>
+
+                        <p>The Android platform was spawned from the efforts of an organization known as the Open Handset Alliance (OHA), which had at the outset the mission of collaborating to &ldquo;build a better mobile phone.&rdquo; Today, if you visit the&nbsp;<a href="https://www.openhandsetalliance.com/">Open Handset Alliance website</a>, you might think that their efforts were in vain, as the latest news item dates to 2011. However, what was started with that group of carriers, hardware manufacturers, and software vendors has grown into the world&rsquo;s most popular platform. Is Google the &ldquo;man behind the curtain&rdquo; of the OHA? Maybe, but no matter. In the decade since its introduction, Android is offered in the market by many large players across the globe and across numerous industries. Samsung, also a member of the OHA, is the leading manufacturer of smartphone devices worldwide, thanks to Android.</p>
+
+                        <p>Although a single device (the G1 device manufactured by HTC and provisioned on the T-Mobile network) started it all, Android devices are now available in virtually every market on the planet &mdash; not just for mobile phones.</p>
+
+                        <p>It is beyond the scope of this article, but ask yourself if there is not a correlation between (arguably) the world&rsquo;s most successful Internet/search company also being the driving force behind the world&rsquo;s most popular mobile platform. More eyeballs view Android devices every day worldwide than any other single computing platform.</p>
+
+                        <p>If you want to write code that can run literally anywhere in the world, then you need to learn about the Android platform, so read on!</p>
+
+                        <h2>The Android platform</h2>
+
+                        <p>Looking at Android&rsquo;s breadth of capabilities, it would be easy to confuse it with a desktop operating system. Android is a layered environment, one that is built upon a foundation of the Linux kernel and includes rich functionality. The user interface subsystem includes everything you would expect from a mature operating system environment including windows, views, and widgets for displaying common elements like edit boxes, lists, or drop-down lists. The browser is both capable for general web browsing and available for embedding directly into your own application.</p>
+
+                        <p>In the past decade, the mobile web has been transformed by the adoption of smartphones across consumer and business applications, including Android. &ldquo;Responsive&rdquo; web technologies have made the utility of mobile devices greatly enhanced.</p>
+
+                        <p>Figure 1 displays a simplified view of the Android software layers:</p>
+
+                        <ul>
+                            <li>Applications: Built-in applications, such as phone, contacts, browser, and more. The specific applications vary by Android version and manufacturer. Commercial applications from marketplaces, such as Google Play, Amazon, and more. Side-loaded applications, including the ones you will build. You install these via USB cable.</li>
+                            <li>Application frameworks, such as telephony manager, location manager, notification manager, content providers, windowing, resource manager, and more.</li>
+                            <li>Libraries, such as graphics libraries, media libraries, database libraries, sensors, and so on.</li>
+                            <li>The Android runtime is responsible for executing and managing applications as they run.</li>
+                            <li>
+
+                                <p>Linux Kernel, including power, file system, drivers, process management, and more.</p>
+
+                                <h5>Figure 1. Android software layers<img src="https://developer.ibm.com/developer/articles/os-android-devel/images/fig02.png" style="width: 300px;" class="fr-fic fr-dib"></h5>
+
+                                <p>Android boasts a healthy array of connectivity options including wifi, Bluetooth, NFC, and of course cellular connections on every network that you can imagine. Location-based services power popular mapping and navigation apps. Digital cameras have essentially retreated up-market due to the quality of the cameras found in modern smartphones. Android supports multiple cameras with the ability to capture full motion video. One of my favorite classes of applications is machine vision, where applications use the camera as an input device to perform inspections for manufacturing. Voice-based services make the modern Android device a virtual personal assistant.</p>
+
+                                <p>If you can dream it, you can program it on the Android platform!</p>
+
+                                <p>Clearly, Android is a capable computing platform, so let&rsquo;s see what kinds of applications Android can run.</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+//post 2
+        <div id="post2" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Spring Core - Part 1: Spring IoC, Inversion of Control in Spring.</h4><br>
+                <small>Created at: 19/10/2018 | Published at: 18/10/2018</small>
+            </div>
+            <div class="modal-body">
+                <p>1. What is IoC?</p>
+
+                <p>IoC ( I nversion o f C ontrol): Reverse control, it helps to change the control flow of the program flexibly.</p>
+
+                <p>Commonly used with Denpendency Injection.</p>
+
+                <p>You can review the article about Dependency Injection to better understand</p>
+
+                <p>2. Spring IoC</p>
+
+                <p>IoC Container is a component of implementing IoC.</p>
+
+                <p>In Spring, Spring Container (IoC Container) will create objects, assemble them together, configure objects and manage their lifecycle from creation to destruction. Spring containers use DI to manage components and objects to create an application. These components and objects are called Spring Bean (I will talk about Spring Bean in the following articles).</p>
+
+                <p>To create objects, configure, assemble them, Spring Container will read information from xml files and execute them.</p>
+                <hr>
+
+                <p><img src="https://modungphucno1.github.io/front-end/img/ioc.png" style="width: 300px;" class="fr-fic fr-dib"></p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+        </div>
+        </div>
 
 
         <script>
@@ -308,3 +411,19 @@
 
     </body>
 </html>
+<script>
+    function deleteRow(td) {
+        let text = confirm("Do you want to delete this field?");
+        if (text == true) {
+            row = td.parentElement.parentElement;
+            document.getElementById("tblPost").deleteRow(row.rowIndex);
+        }
+        return true;
+    }
+    function Redirect() {
+        window.location="edit-post.html";
+    }
+    function Redirect2() {
+        window.location="edit-post2.html";
+    }
+</script>

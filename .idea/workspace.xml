@@ -6,13 +6,26 @@
       <change beforePath="$PROJECT_DIR$/admin/add-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/add-role.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-role.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/add-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assign-role.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assign-role.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/edit-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit-post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/edit-post2.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit-post2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/manage-categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-categories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/manage-ff.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-ff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/manage-ff2.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-ff2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/manage-posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-posts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/manage-role.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-role.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/manage-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/404error.html" beforeDir="false" afterPath="$PROJECT_DIR$/editor/404error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/add-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/editor/add-post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/editor/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/data/category.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/includes/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/includes/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/includes/leftsidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/includes/topheader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/editor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/manage-posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/editor/manage-posts.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,135 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/manage-categories.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="164" column="67" selection-start-line="164" selection-start-column="67" selection-end-line="164" selection-end-column="67" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="191" column="67" selection-start-line="191" selection-start-column="67" selection-end-line="191" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/assign-role.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-286">
-              <caret line="121" column="33" selection-start-line="121" selection-start-column="33" selection-end-line="121" selection-end-column="33" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#button#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/add-user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="167" column="71" selection-start-line="167" selection-start-column="71" selection-end-line="167" selection-end-column="71" />
-              <folding>
-                <element signature="n#style#0;n#i#0;n#span#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/add-role.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="162" column="67" selection-start-line="162" selection-start-column="67" selection-end-line="162" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/add-post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="170" column="55" selection-start-line="170" selection-start-column="55" selection-end-line="170" selection-end-column="55" />
-              <folding>
-                <element signature="n#style#0;n#button#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/add-category.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="161" column="67" selection-start-line="161" selection-start-column="67" selection-end-line="161" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="50" column="61" lean-forward="true" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/edit-post2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="170" column="55" selection-start-line="170" selection-start-column="55" selection-end-line="170" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/edit-post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="170" column="55" selection-start-line="170" selection-start-column="55" selection-end-line="170" selection-end-column="55" />
-              <folding>
-                <element signature="n#style#0;n#button#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#61#66#0" expanded="true" />
-                <element signature="e#450#457#0" expanded="true" />
-                <element signature="e#471#478#0" expanded="true" />
-                <element signature="e#735#742#0" expanded="true" />
-                <element signature="e#1071#1078#0" expanded="true" />
-                <element signature="e#1125#1132#0" expanded="true" />
-                <element signature="e#1322#1329#0" expanded="true" />
-                <element signature="e#1353#1360#0" expanded="true" />
-                <element signature="e#2034#2041#0" expanded="true" />
-                <element signature="e#2282#2289#0" expanded="true" />
-                <element signature="e#2765#2772#0" expanded="true" />
-                <element signature="e#2800#2807#0" expanded="true" />
-                <element signature="e#2831#2837#0" expanded="true" />
-                <element signature="e#3133#3140#0" expanded="true" />
-                <element signature="e#3179#3186#0" expanded="true" />
-                <element signature="e#3208#3215#0" expanded="true" />
-                <element signature="e#3708#3715#0" expanded="true" />
-                <element signature="e#3869#3876#0" expanded="true" />
-                <element signature="e#3963#3970#0" expanded="true" />
-                <element signature="e#4305#4312#0" expanded="true" />
-                <element signature="e#5024#5031#0" expanded="true" />
-                <element signature="e#5041#5048#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="143">
+              <caret line="224" column="52" selection-start-line="224" selection-start-column="52" selection-end-line="224" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -184,7 +73,6 @@
       <find>130</find>
       <find>--role</find>
       <find>reset</find>
-      <find>assi</find>
       <find>assig</find>
       <find>user</find>
       <find>manage role</find>
@@ -194,6 +82,8 @@
       <find>https://www.tiny.cloud/?utm_campaign=editor_referral&amp;utm_medium=poweredby&amp;utm_source=tinymce&amp;utm_content=v5</find>
       <find>category</find>
       <find>add</find>
+      <find>assi</find>
+      <find>logo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,28 +95,31 @@
         <option value="$PROJECT_DIR$/admin/assets/js/test.js" />
         <option value="$PROJECT_DIR$/admin/assets/js/manageCategory.js" />
         <option value="$PROJECT_DIR$/admin/assets/json/category.json" />
-        <option value="$PROJECT_DIR$/editor/404error.html" />
-        <option value="$PROJECT_DIR$/editor/manage-posts.html" />
-        <option value="$PROJECT_DIR$/editor/add-post.html" />
-        <option value="$PROJECT_DIR$/editor/dashboard.html" />
         <option value="$PROJECT_DIR$/admin/index.html" />
         <option value="$PROJECT_DIR$/admin/assets/tinymce/tinymce.min.js" />
         <option value="$PROJECT_DIR$/admin/manage-file.html" />
-        <option value="$PROJECT_DIR$/admin/assign-role.html" />
         <option value="$PROJECT_DIR$/admin/assets/css/custom.css" />
-        <option value="$PROJECT_DIR$/admin/manage-ff.html" />
-        <option value="$PROJECT_DIR$/admin/manage-ff2.html" />
-        <option value="$PROJECT_DIR$/admin/manage-role.html" />
-        <option value="$PROJECT_DIR$/admin/manage-categories.html" />
+        <option value="$PROJECT_DIR$/editor/index.html" />
         <option value="$PROJECT_DIR$/admin/manage-user.html" />
+        <option value="$PROJECT_DIR$/editor/add-post.html" />
+        <option value="$PROJECT_DIR$/admin/manage-role.html" />
         <option value="$PROJECT_DIR$/admin/manage-posts.html" />
+        <option value="$PROJECT_DIR$/admin/manage-ff2.html" />
+        <option value="$PROJECT_DIR$/admin/manage-ff.html" />
+        <option value="$PROJECT_DIR$/admin/manage-categories.html" />
         <option value="$PROJECT_DIR$/admin/edit-post2.html" />
         <option value="$PROJECT_DIR$/admin/edit-post.html" />
-        <option value="$PROJECT_DIR$/admin/dashboard.html" />
+        <option value="$PROJECT_DIR$/admin/assign-role.html" />
         <option value="$PROJECT_DIR$/admin/add-user.html" />
         <option value="$PROJECT_DIR$/admin/add-role.html" />
         <option value="$PROJECT_DIR$/admin/add-post.html" />
         <option value="$PROJECT_DIR$/admin/add-category.html" />
+        <option value="$PROJECT_DIR$/editor/edit-post.html" />
+        <option value="$PROJECT_DIR$/editor/edit-post2.html" />
+        <option value="$PROJECT_DIR$/editor/manage-posts.html" />
+        <option value="$PROJECT_DIR$/editor/404error.html" />
+        <option value="$PROJECT_DIR$/editor/dashboard.html" />
+        <option value="$PROJECT_DIR$/admin/dashboard.html" />
       </list>
     </option>
   </component>
@@ -265,19 +158,6 @@
               <item name="HCI" type="b2602c69:ProjectViewProjectNode" />
               <item name="HCI" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HCI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HCI" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HCI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HCI" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -337,12 +217,12 @@
       <workItem from="1560009442232" duration="16031000" />
       <workItem from="1560026494186" duration="21688000" />
       <workItem from="1560071153367" duration="16298000" />
-      <workItem from="1560098247945" duration="26656000" />
+      <workItem from="1560098247945" duration="28485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80673000" />
+    <option name="totallyTimeSpent" value="82502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -391,40 +271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editor/404error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="87" selection-start-line="87" selection-end-line="143" selection-end-column="10" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="154" column="135" selection-start-line="154" selection-start-column="135" selection-end-line="154" selection-end-column="135" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/manage-posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="149" column="135" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/add-post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="160" column="135" selection-start-line="160" selection-start-column="135" selection-end-line="160" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/assets/tinymce/tinymce.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15385">
@@ -461,33 +307,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/manage-user.html">
+    <entry file="file://$PROJECT_DIR$/editor/add-post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="162" column="67" selection-start-line="162" selection-start-column="67" selection-end-line="162" selection-end-column="67" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="77" column="46" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/manage-posts.html">
+    <entry file="file://$PROJECT_DIR$/editor/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="174" column="67" selection-start-line="174" selection-start-column="67" selection-end-line="174" selection-end-column="67" />
-          <folding>
-            <element signature="n#style#0;n#th#7;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#h5#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="1122">
+          <caret line="69" column="140" selection-start-line="69" selection-start-column="140" selection-end-line="69" selection-end-column="140" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/manage-role.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4479">
-          <caret line="422" column="131" selection-start-line="422" selection-start-column="131" selection-end-line="422" selection-end-column="131" />
+        <state relative-caret-position="211">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -546,10 +383,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/manage-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/manage-posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#th#7;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#h5#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/manage-ff2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="207" column="49" selection-start-line="207" selection-start-column="49" selection-end-line="207" selection-end-column="49" />
+        <state relative-caret-position="211">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -564,10 +424,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/manage-ff.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="194" column="13" lean-forward="true" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
+        <state relative-caret-position="211">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -589,8 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/manage-categories.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="164" column="67" selection-start-line="164" selection-start-column="67" selection-end-line="164" selection-end-column="67" />
+        <state relative-caret-position="211">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
@@ -611,15 +470,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/edit-post2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="170" column="55" selection-start-line="170" selection-start-column="55" selection-end-line="170" selection-end-column="55" />
+        <state relative-caret-position="211">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/edit-post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="170" column="55" selection-start-line="170" selection-start-column="55" selection-end-line="170" selection-end-column="55" />
+        <state relative-caret-position="177">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#button#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#61#66#0" expanded="true" />
@@ -648,27 +507,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="191" column="67" selection-start-line="191" selection-start-column="67" selection-end-line="191" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/add-user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="167" column="71" selection-start-line="167" selection-start-column="71" selection-end-line="167" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#span#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/assign-role.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="121" column="33" selection-start-line="121" selection-start-column="33" selection-end-line="121" selection-end-column="33" />
+        <state relative-caret-position="211">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding>
             <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#button#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -676,17 +518,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#span#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/add-role.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="162" column="67" selection-start-line="162" selection-start-column="67" selection-end-line="162" selection-end-column="67" />
+        <state relative-caret-position="211">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/add-post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="170" column="55" selection-start-line="170" selection-start-column="55" selection-end-line="170" selection-end-column="55" />
+        <state relative-caret-position="211">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#button#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -695,8 +547,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/add-category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="161" column="67" selection-start-line="161" selection-start-column="67" selection-end-line="161" selection-end-column="67" />
+        <state relative-caret-position="211">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/edit-post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="95" selection-start-line="95" selection-end-line="142" selection-end-column="18" />
+          <folding>
+            <element signature="e#61#66#0" expanded="true" />
+            <element signature="e#450#457#0" expanded="true" />
+            <element signature="e#471#478#0" expanded="true" />
+            <element signature="e#735#742#0" expanded="true" />
+            <element signature="e#1071#1078#0" expanded="true" />
+            <element signature="e#1125#1132#0" expanded="true" />
+            <element signature="e#1322#1329#0" expanded="true" />
+            <element signature="e#1353#1360#0" expanded="true" />
+            <element signature="e#2034#2041#0" expanded="true" />
+            <element signature="e#2282#2289#0" expanded="true" />
+            <element signature="e#2765#2772#0" expanded="true" />
+            <element signature="e#2800#2807#0" expanded="true" />
+            <element signature="e#2831#2837#0" expanded="true" />
+            <element signature="e#3133#3140#0" expanded="true" />
+            <element signature="e#3179#3186#0" expanded="true" />
+            <element signature="e#3208#3215#0" expanded="true" />
+            <element signature="e#3708#3715#0" expanded="true" />
+            <element signature="e#3869#3876#0" expanded="true" />
+            <element signature="e#3963#3970#0" expanded="true" />
+            <element signature="e#4305#4312#0" expanded="true" />
+            <element signature="e#5024#5031#0" expanded="true" />
+            <element signature="e#5041#5048#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/edit-post2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="142" column="18" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/manage-posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="145" column="26" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/404error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="166" column="57" selection-start-line="166" selection-start-column="57" selection-end-line="166" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="229" lean-forward="true" selection-start-line="229" selection-end-line="229" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="224" column="52" selection-start-line="224" selection-start-column="52" selection-end-line="224" selection-end-column="52" />
         </state>
       </provider>
     </entry>
