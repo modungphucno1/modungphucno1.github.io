@@ -183,7 +183,7 @@
                     <div class="container">
                         <div class="row">
 							<div class="col-xs-12">
-								<div class="page-title-box">
+								<div class="page-title-box" style="margin-bottom: 0">
                                     <h4 class="page-title">File&Folder</h4>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
@@ -198,22 +198,33 @@
 							</div>
 						</div>
                         <!-- end row -->
-                        <div class = "row" id = "2">
-                            <div class="wrap" style="float: right; margin-right: 50px">
-                                <div class="search">
-                                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                                    <button type="submit" class="searchButton">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </div>
+                        <div class = "row" style="border-bottom-style: solid;border-bottom-color: #3b3e47;border-bottom-width: 2px">
+                            <div class="col-md-1" style="padding: 5px; margin: 5px" class = "iconn">
+                                <a href="manage-ff.html"><i class="fa fa-arrow-circle-left" style="font-size: 45px"></i></a>
                             </div>
-                        </div>
+                            <div class="col-md-1" style="padding: 5px; margin: 5px">
+                                <a><i class="fa fa-upload" style="font-size: 45px"></i>
+
+                                </a>
+                            </div>
+                            <div class="col-md-1" style="padding: 5px; margin: 5px">
+                                <a href="manage-ff.html"><img src="icons/folder-plus-solid.svg" style="width:42px; height: 45px"></a>
+                            </div>
+
+                        </div >
 
                         <div class="row" style="margin-top: 50px">
                             <div class="col-lg-3">
                                 <div class="co" style="margin-left: 40px">
                                 <a><i class="fa fa-folder" style="font-size: 30px"></i></a>
                                 <a href="manage-ff2.html"><span class ="title">Hoc tap</span></a>
+                                    <div class="dropdown" style="float: right">
+                                        <a><button value="thuthuat" class="dropbtn"><i class="fa fa-ellipsis-v"></i></button>
+                                            <div id="thuthuat" class="dropdown-content">
+                                                <a href="#">Rename</a>
+                                                <a href="#">Delete</a>
+                                            </div></a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-3">

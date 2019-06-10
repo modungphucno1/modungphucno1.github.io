@@ -215,7 +215,7 @@
      <td><button class="btn btn-success btn-xs">Activated</button></td>
 
 <td>	<a data-toggle="modal" data-target="#view" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
-    <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+    <a onclick="editUser();" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
     <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
             class="fa fa-trash-o"></i>  </a> </td>
 </tr>
@@ -229,7 +229,7 @@
      <td><button class="btn btn-danger btn-xs">Deactivated</button></td>
 
      <td>	<a data-toggle="modal" data-target="#view" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
-         <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+         <a onclick="editUser();" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
          <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
                  class="fa fa-trash-o"></i>  </a> </td>
  </tr>
@@ -243,7 +243,7 @@
      <td><button class="btn btn-success btn-xs">Activated</button></td>
 
      <td>	<a data-toggle="modal" data-target="#view" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
-         <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+         <a donclick="editUser();" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
          <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
                  class="fa fa-trash-o"></i>  </a> </td>
  </tr>
@@ -257,7 +257,7 @@
      <td><button class="btn btn-success btn-xs">Activated</button></td>
 
      <td>	<a data-toggle="modal" data-target="#view" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
-         <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+         <a onclick="editUser();" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
          <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
                  class="fa fa-trash-o"></i>  </a> </td>
  </tr>
@@ -381,5 +381,8 @@
             document.getElementById("tblUser").deleteRow(row.rowIndex);
         }
         return true;
+    }
+    function editUser() {
+        window.location="edit-user.html";
     }
 </script>

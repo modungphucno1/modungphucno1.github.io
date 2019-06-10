@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Newsportal | Edit User</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
+        <script src="assets/js/modernizr.min.js"></script>
+        <script type="text/javascript">
+            setData();
+        </script>
+
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+<!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="dashboard.html" class="logo"><span>NEWS<span>PORTAL</span></span><i class="mdi mdi-layers"></i></a>
+                    <!-- Image logo -->
+                    <!--<a href="index.html" class="logo">-->
+                        <!--<span>-->
+                            <!--<img src="assets/images/logo.png" alt="" height="30">-->
+                        <!--</span>-->
+                        <!--<i>-->
+                            <!--<img src="assets/images/logo_sm.png" alt="" height="28">-->
+                        <!--</i>-->
+                    <!--</a>-->
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+
+                        <!-- Navbar-left -->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <button class="button-menu-mobile open-left waves-effect">
+                                    <i class="mdi mdi-menu"></i>
+                                </button>
+                            </li>
+                     
+                    
+                        </ul>
+
+                        <!-- Right(Notification) -->
+                        <ul class="nav navbar-nav navbar-right">
+                          
+
+                            <li class="dropdown user-box">
+                                <a href="" class="dropdown-toggle waves-effect user-link" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle user-img">
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
+                                    <li>
+                                        <h5>Hi, Admin</h5>
+                                    </li>
+                              
+                                    <li><a href="#"><i class="ti-settings m-r-5"></i> Change Password</a></li>
+                           
+                                    <li><a href="index.html"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+
+                        </ul> <!-- end navbar-right -->
+
+                    </div><!-- end container -->
+                </div><!-- end navbar -->
+            </div>
+<!-- Top Bar End -->
+
+
+<!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <ul>
+                            <li class="menu-title">Navigation</li>
+
+                            <li class="has_sub">
+                                <a href="dashboard.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+
+                            </li>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>User </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-user.html">Create User</a></li>
+                                    <li><a href="manage-user.html">Manage User</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Role </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-role.html">Create Role</a></li>
+                                    <li><a href="manage-role.html">Manage Role</a></li>
+                                    <li><a href="assign-role.html">Assign Role</a></li>
+                                </ul>
+                            </li>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Category </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-category.html">Create Category</a></li>
+                                    <li><a href="manage-categories.html">Manage Category</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Post </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-post.html">Create Posts</a></li>
+                                    <li><a href="manage-posts.html">Manage Posts</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="has_sub">
+                                <a href="manage-ff.html"><i class="mdi mdi-format-list-bulleted"></i> <span> File & Folder </span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+               
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+                
+                <!-- Sidebar -left -->
+
+            </div>
+ <!-- Left Sidebar End -->
+
+            <div class="content-page">
+                <!-- Start content -->
+            <!-- content -->
+                <div>
+                    <div class="content">
+                        <div class="container">
+
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="page-title-box">
+                                        <h4 class="page-title">Edit User</h4>
+                                        <ol class="breadcrumb p-0 m-0">
+                                            <li>
+                                                <a href="dashboard.html">Admin</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">User </a>
+                                            </li>
+                                            <li class="active">
+                                                Edit User
+                                            </li>
+                                        </ol>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                            <form class="form-horizontal" name="category" method="post">
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card-box">
+                                        <h4 class="m-t-0 header-title"><b>User Validation </b></h4>
+                                        <hr />
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <!---Success Message--->
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                    <div class="form-group">
+
+                                                        <div class="form-group">
+                                                            <span class="col-md-4 text-right"><i class="fa fa-user" style="font-size:36px"></i></span>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control" value="huynhnd.hanu" name="username" required placeholder="Username">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <span class="col-md-4 text-right"><i class="fa fa-lock" style="font-size:42px"></i></span>
+                                                            <div class="col-md-8">
+                                                                <input type="password" class="form-control" value="***" name="password" required placeholder="Password">
+                                                                <label class="col-md-12 text-left"><small>Password MUST contain both number and letter</small></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <span class="col-md-4 text-right"><i class="fa fa-lock" style="font-size:42px"></i></span>
+                                                            <div class="col-md-8">
+                                                                <input type="password" class="form-control" value="***" name="password" required placeholder="Comfirm Password">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <span class="col-md-4 text-right"><i class="fa fa-users" style="font-size:32px"></i></span>
+                                                            <div class="col-md-8">
+                                                                <select type="button" class="btn btn-brown btn-xs" value = "3"id = "role">
+                                                                    <option value="0">--Role--</option>
+                                                                    <option value="1">Admin</option>
+                                                                    <option value="2">Editor</option>
+                                                                    <option value="3" selected>User</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <span class="col-md-4 text-right"><i class="fa fa-power-off" style="font-size:32px"></i></span>
+                                                            <div class="col-md-8">
+                                                                <select type="button" class="btn btn-brown btn-xs" value = "1" id="status">
+                                                                    <option value="0">Status</option>
+                                                                    <option value="1" selected>Activated</option>
+                                                                    <option value="2">Deactivated</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card-box">
+                                    <h4 class="m-t-0 header-title"><b>User Information </b></h4>
+                                    <hr />
+
+                                        <div class="form-group">
+
+                                            <div class="form-group">
+                                                <span class="col-md-3 text-right"><i class="fa fa-id-card" style="font-size:35px"></i></span>
+
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" value="Nguyen" name="lastname" required placeholder="Last name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="col-md-3 text-right"><i class="fa fa-id-card" style="font-size:35px"></i></span>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" value="Duc Huynh" name="firstname" required placeholder="First name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="col-md-3 text-right"><i class="fa fa-calendar" style="font-size:32px"></i></span>
+                                                <div class="col-md-6" id="datetimepicker5" >
+                                                    <input type="date" class="form-control"  value="20/10/1997" name="dob" required placeholder="Date of birth">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="col-md-3 text-right"><i class="fa fa-phone-square"style="font-size:36px"></i></span>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" value="0388126591" name="phone" required placeholder="Phone number">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="col-md-3 text-right"><i class="fa fa-envelope-square"style="font-size:36px"></i></span>
+                                                <div class="col-md-6">
+                                                    <input type="email" class="form-control" value="huynhnd.hanu@gmail.com" name="email" required placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class =  "form-group">
+                                                <span class="col-md-3 text-right"><i class="fa fa-location-arrow" style="font-size: 36px"></i></span>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" value="Ha Dong" name="address" required placeholder="Address">
+                                                </div>
+                                            </div>
+
+
+
+                                </div>
+
+                                <!-- end row -->
+
+
+                            </div> <!-- container -->
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label ">&nbsp;</label>
+                            <div class="col-md-2" align="right">
+                                <button type="submit" class="btn btn btn-success waves-effect waves-light btn-md" name="submitsubcat" onclick="alert('Update successful')">Update</button>
+                            </div>
+                            <div class="col-md-4"><button type="submit" class="btn btn-danger waves-effect waves-light btn-md" name="resetcat" onclick="Redirect();">Cancel</button></div>
+                        </div>
+                    </div>
+                        </form>
+                <footer class="footer text-right">
+                   2018 © Developed by Hanuer
+                </footer>
+
+
+            </div>
+
+
+
+                </div>
+
+        </div>
+    </body>
+        <!-- END wrapper -->
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="../plugins/switchery/switchery.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+
+</html>
+<script>
+    function setData() {
+        document.getElementsByName('username').value = "huynhnd.hanu";
+        document.getElementsByName("password").value = "";
+        document.getElementById('role').value = 3;
+        document.getElementById('status').value = 1;
+        document.getElementsByName('lastname').value = "Nguyen ";
+        document.getElementsByName('firstname').value = "Duc Huynh";
+        document.getElementsByName('dob').defaultValue = "22/12/1997";
+        document.getElementsByName('phone').value = "0388126591";
+        document.getElementsByName('email').value = "huynhnd.hanu@gmail.com";
+        document.getElementsByName('address').value ="Ha Dong";
+    } function Redirect() {
+        window.location="manage-user.html";
+    }
+</script>
