@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 
-    <title>Newsportal | Add New Post</title>
+    <title>Newsportal | Edit Post</title>
 
     <!-- App css -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -174,7 +174,7 @@
                                 <a href="#">Post </a>
                             </li>
                             <li class="active">
-                                Create Post
+                                Edit Post
                             </li>
                         </ol>
                         <div class="clearfix"></div>
@@ -263,8 +263,8 @@
 
                                 <div class="form-group" style="text-align: center; margin-bottom: 40px">
                                     <div class="col-md-5 col-md-offset-3">
-                                        <button type="button" class="btn btn-success" onclick="alert('Create successful')">Create</button>
-                                        <button type="button" class="btn btn-danger" onclick="resett()" style ="margin-left: 20px">Reset</button>
+                                        <button type="button" class="btn btn-primary" onclick="alert('Update successful')">Update</button>
+                                        <button type="button" class="btn btn-danger" onclick="Redirect();" style ="margin-left: 20px">Cancel</button>
 
                                     </div>
                                 </div>
@@ -341,4 +341,30 @@
         document.getElementById("cate").value = 0;
         document.getElementById("status").value = 0;
     }
+    function Redirect() {
+        window.location="manage-posts.html";
+    }
+</script>
+<script>
+    document.getElementById("title").value ="Spring Core - Part 1: Spring IoC, Inversion of Control in Spring.";
+    document.getElementById("intro").value ="IoC ( I nversion o f C ontrol): Reverse control, it helps to change the control flow of the program flexibly.";
+    document.getElementById("write").value = "Son DH";
+    document.getElementById("txtEditor").value = "<p>1. What is IoC?</p>\n" +
+        "\n" +
+        "<p>IoC ( I nversion o f C ontrol): Reverse control, it helps to change the control flow of the program flexibly.</p>\n" +
+        "\n" +
+        "<p>Commonly used with Denpendency Injection.</p>\n" +
+        "\n" +
+        "<p>You can review the article about Dependency Injection to better understand</p>\n" +
+        "\n" +
+        "<p>2. Spring IoC</p>\n" +
+        "\n" +
+        "<p>IoC Container is a component of implementing IoC.</p>\n" +
+        "\n" +
+        "<p>In Spring, Spring Container (IoC Container) will create objects, assemble them together, configure objects and manage their lifecycle from creation to destruction. Spring containers use DI to manage components and objects to create an application. These components and objects are called Spring Bean (I will talk about Spring Bean in the following articles).</p>\n" +
+        "\n" +
+        "<p>To create objects, configure, assemble them, Spring Container will read information from xml files and execute them.</p>\n";
+    document.getElementById("cate").value = 1;
+    document.getElementById("status").value = 0;
+    document.getElementById("pic").value = "\thttps://modungphucno1.github.io/front-end/img/ioc.png";
 </script>

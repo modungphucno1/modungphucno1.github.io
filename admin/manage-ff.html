@@ -7,7 +7,7 @@
         <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
         <meta name="author" content="Coderthemes">
         <!-- App title -->
-        <title>News Portal | Dashboard</title>
+        <title>News Portal | File&Folder</title>
 		<link rel="stylesheet" href="../plugins/morris/morris.css">
 
         <!-- App css -->
@@ -20,6 +20,7 @@
         <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="../plugins/switchery/switchery.min.css">
         <script src="assets/js/modernizr.min.js"></script>
+        <link href="assets/css/custom.css" rel = "stylesheet" type="text/css"/>
 
     </head>
 
@@ -183,16 +184,13 @@
                         <div class="row">
 							<div class="col-xs-12">
 								<div class="page-title-box">
-                                    <h4 class="page-title">Dashboard</h4>
+                                    <h4 class="page-title">File&Folder</h4>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
-                                            <a href="#">NewsPortal</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Admin</a>
+                                            <a href="dashboard.html">Admin</a>
                                         </li>
                                         <li class="active">
-                                            Dashboard
+                                            File&Folder
                                         </li>
                                     </ol>
                                     <div class="clearfix"></div>
@@ -200,66 +198,63 @@
 							</div>
 						</div>
                         <!-- end row -->
-
-                        <div class="row">
-<a href="manage-categories.html">
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="card-box widget-box-one">
-                                    <i class="mdi mdi-chart-areaspline widget-one-icon"></i>
-                                    <div class="wigdet-one-content">
-                                        <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="Statistics">Categories Listed</p>
-
-
-                                        <h2><small>3</small></h2>
-                                    
-                                    </div>
+                        <div class = "row" id = "2">
+                            <div class="wrap" style="float: right; margin-right: 50px">
+                                <div class="search">
+                                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                                    <button type="submit" class="searchButton">
+                                        <i class="fa fa-search"></i>
+                                    </button>
                                 </div>
-                            </div></a><!-- end col -->
-<a href="manage-user.html">
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="card-box widget-box-one">
-                                    <i class="mdi mdi-layers widget-one-icon"></i>
-                                    <div class="wigdet-one-content">
-                                        <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="User This Month">Listed Users</p>
+                            </div>
+                        </div>
 
-                                        <h2><small>3</small></h2>
-                              
-                                    </div>
+                        <div class="row" style="margin-top: 50px">
+                            <div class="col-lg-3">
+                                <div class="co" style="margin-left: 40px">
+                                <a><i class="fa fa-folder" style="font-size: 30px"></i></a>
+                                <a href="manage-ff2.html"><span class ="title">Hoc tap</span></a>
                                 </div>
-                            </div><!-- end col -->
-</a>
-
-     <a href="manage-posts.html">                       
-        <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="card-box widget-box-one">
-                                    <i class="mdi mdi-layers widget-one-icon"></i>
-                                    <div class="wigdet-one-content">
-                                        <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="User This Month">Post List</p>
-
-                                        <h2><small>2</small></h2>
-                              
-                                    </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="co" style="margin-right: 20px">
+                                    <a><i class="fa fa-folder" style="font-size: 30px"></i></a>
+                                    <a href="manage-ff2.html"><span class ="title">Images</span></a>
                                 </div>
-                            </div><!-- end col -->
-</a>
-                
-                  
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="co" style="margin-right: 20px">
+                                    <a><i class="fa fa-folder" style="font-size: 30px"></i></a>
+                                    <a href="manage-ff2.html"><span class ="title">Images</span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="co" style="margin-right: 20px">
+                                    <a><i class="fa fa-folder" style="font-size: 30px"></i></a>
+                                    <a href="manage-ff2.html"><span class ="title">Images</span></a>
+                                </div>
+                            </div>
                         </div>
                         <!-- end row -->
-   
-   <div class="row">
-                    
-      <a href="#"> <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="card-box widget-box-one">
-                                    <i class="mdi mdi-layers widget-one-icon"></i>
-                                    <div class="wigdet-one-content">
-                                        <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="User This Month">Trash News</p>
 
-                                        <h2> <small></small></h2>
-                              
-                                    </div>
-                                </div>
-                            </div></a>
+   <div class="row" style="margin-top: 30px">
+       <div class="col-lg-3" >
+           <div class="co" style="margin-left: 40px">
+               <a><i class="fa fa-file-text-o"style="font-size: 30px"></i></a>
+               <a href="materials/HCI_final.docx"><span class ="title">HCI Final</span></a>
+           </div>
+       </div>
+       <div class="col-lg-3" >
+           <div class="co" style="margin-right: 20px">
+               <a><i class="fa fa-file-image-o"style="font-size: 30px"></i></a>
+               <a href="materials/123.jpg"><span class ="title">Meo</span></a>
+           </div>
+       </div>
+       <div class="col-lg-2"></div>
+       <div class="col-lg-2"></div>
+       <div class="col-lg-2"></div>
+       <div class="col-lg-2"></div>
+
 </div>
 
                     </div> <!-- container -->

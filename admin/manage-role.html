@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
 
-        <title> | Manage Categories</title>
+        <title> | Manage Role</title>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
@@ -106,7 +106,7 @@
                                 <ul class="list-unstyled">
                                     <li><a href="add-role.html">Create Role</a></li>
                                     <li><a href="manage-role.html">Manage Role</a></li>
-                                    <li><a href="#">Assign Role</a></li>
+                                    <li><a href="assign-role.html">Assign Role</a></li>
                                 </ul>
                             </li>
                             <li class="has_sub">
@@ -126,10 +126,7 @@
                                 </ul>
                             </li>
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> File & Folder </span> <span class="menu-arrow"></span></a>
-                                <ul class="list-unstyled">
-
-                                </ul>
+                                <a href="manage-ff.html"><i class="mdi mdi-format-list-bulleted"></i> <span> File & Folder </span> </a>
                             </li>
                         </ul>
                     </div>
@@ -217,10 +214,9 @@
                                                                 <th>#</th>
                                                                 <th>Admin</th>
                                                                 <th>Full access</th>
-                                                                <th></th>
-                                                                <th></th>
+                                                                <th>03/01/2019</th>
+                                                                <th>04/03/2019</th>
                                                                 <th>
-                                                                    <a data-toggle="modal"  class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
                                                                     <a data-toggle="modal" onclick="alert('You can not edit this field')" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
                                                                     <a class="btn btn-danger btn-xs" onclick="alert('You can not delete this field')" ><i
                                                                             class="fa fa-trash-o"></i>  </a>
@@ -230,10 +226,9 @@
                                                                 <th>#</th>
                                                                 <th>Editor</th>
                                                                 <th>View, create, edit and delete posts</th>
-                                                                <th></th>
-                                                                <th></th>
+                                                                <th>01/04/2019</th>
+                                                                <th>02/04/2019</th>
                                                                 <th>
-                                                                    <a data-toggle="modal" data-target="#viewPrivilege" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
                                                                     <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
                                                                     <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
                                                                             class="fa fa-trash-o"></i>  </a>
@@ -243,11 +238,10 @@
                                                                 <th>#</th>
                                                                 <th>User</th>
                                                                 <th>View post</th>
-                                                                <th></th>
-                                                                <th></th>
+                                                                <th>12/10/2018</th>
+                                                                <th>20/12/2018</th>
                                                                 <th>
-                                                                    <a data-toggle="modal" data-target="#viewPrivilege" class="btn btn-warning btn-xs"><i class="fa fa-eye"></i></a>
-                                                                    <a data-toggle="modal" data-target="#editRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+                                                                   <a data-toggle="modal" data-target="#userRole" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
                                                                     <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
                                                                             class="fa fa-trash-o"></i>  </a>
                                                                 </th>
@@ -281,189 +275,396 @@
 
         </div>
         <!-- END wrapper -->
-        <div class="modal fade" id="editRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
+        //editor
+                        <div id="editRole" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Editor</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label>Role</label>
+                                            <input type="text" class="form-control" value="User">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Description </label>
+                                            <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6"
+                                                   data-validate-words="2" name="name" value="View, create, edit and delete posts" required="required"
+                                                   type="text">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <table class="table table-striped projects">
+                                                <thead>
+                                                <tr>
+                                                    <th style="width: 5%">#</th>
+                                                    <th style="width: 15%">Role name</th>
+                                                    <th style="width: 1%">Create</th>
+                                                    <th style="width: 1%">View</th>
+                                                    <th style="width: 1%">Update</th>
+                                                    <th style="width: 1%">Delete</th>
+                                                    <th style="width: 5%">Check all</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>#</td>
+                                                    <td>
+                                                        <a>Manage Role</a>
+                                                        <br>
+                                                        <small></small>
+
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <ul class="list-inline">
+                                                            <p><input type="checkbox" class="checkbox1" name = "acs" value="1" /></p>
+                                                        </ul>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox1" name = "acs" value="2" /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox1" name = "acs" value="3" /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox1" name = "acs" value="4" /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <ul class="list-inline">
+                                                            <a><input type="button" class = "btn btn-success btn-xs" onclick = "selectAll('acs')" /></a>
+                                                            <a><input type="button" class = "btn btn-danger btn-xs" onclick = "UnSelectAll('acs')" /></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                    <td>#</td>
+                                                    <td>
+                                                        <a>Manage User</a>
+                                                        <br>
+                                                        <small></small>
+
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <ul class="list-inline">
+                                                            <p><input type="checkbox" class="checkbox2" name="acs2" value="1" /></p>
+                                                        </ul>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox2" name="acs2"value="2" /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox2"name="acs2" value="3" /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox2"name="acs2" value="4" /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <ul class="list-inline">
+                                                            <a><input type="button" class = "btn btn-success btn-xs" onclick = "selectAll('acs2')" /></a>
+                                                            <a><input type="button" class = "btn btn-danger btn-xs" onclick = "UnSelectAll('acs2')" /></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                    <td>#</td>
+                                                    <td>
+                                                        <a>Manage Category</a>
+                                                        <br>
+                                                        <small></small>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <ul class="list-inline">
+                                                            <p><input type="checkbox" class="checkbox3" name = "acs3"value="1"  /></p>
+                                                        </ul>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox3" name = "acs3"value="2"  /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox3" name = "acs3"value="3"  /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox3" name = "acs3"value="4"  /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <ul class="list-inline">
+                                                            <a><input type="button" class = "btn btn-success btn-xs" onclick = "selectAll('acs3')" /></a>
+                                                            <a><input type="button" class = "btn btn-danger btn-xs" onclick = "UnSelectAll('acs3')" /></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                    <td>#</td>
+                                                    <td>
+                                                        <a>Manage Post</a>
+                                                        <br>
+                                                        <small></small>
+
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <ul class="list-inline">
+                                                            <p><input type="checkbox" class="checkbox4"name = "asc5" value="1" checked /></p>
+                                                        </ul>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox4" name = "asc5"value="2" checked /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox4" name = "asc5"value="3" checked /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox4" name = "asc5"value="4"  /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <ul class="list-inline">
+                                                            <a><input type="button" class = "btn btn-success btn-xs" onclick = "selectAll('asc5')" /></a>
+                                                            <a><input type="button" class = "btn btn-danger btn-xs" onclick = "UnSelectAll('asc5')" /></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                    <td>#</td>
+                                                    <td>
+                                                        <a>Manage File&Folder</a>
+                                                        <br>
+                                                        <small></small>
+
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <ul class="list-inline">
+                                                            <p><input type="checkbox" class="checkbox5" name = "asc4"value="1" /></p>
+                                                        </ul>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox5" name = "asc4"value="2" /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox5"name = "asc4" value="3" /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <p><input type="checkbox" class="checkbox5" name = "asc4"value="4" /></p>
+                                                    </td>
+                                                    <td style="text-align: center">
+                                                        <ul class="list-inline">
+                                                            <a><input type="button" class = "btn btn-success btn-xs" onclick = "selectAll('asc4')" /></a>
+                                                            <a><input type="button" class = "btn btn-danger btn-xs" onclick = "UnSelectAll('asc4')" /></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" onclick="updateConfirm()" data-dismiss="modal">Update</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+        //user
+        <div id="userRole" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
                 <div class="modal-content">
-                    <form>
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                    aria-hidden="true">×</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Edit Role</h4>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">User</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Role</label>
+                            <input type="text" class="form-control" value="User">
                         </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label>Role Name</label>
-                                <input type="text" class="form-control" value="Editor">
-                            </div>
-                            <div class="form-group">
-                                <label>Role Description </label>
-                                <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6"
-                                       data-validate-words="2" name="name" value="Manage Category and Post" required="required"
-                                       type="text">
-                            </div>
+                        <div class="form-group">
+                            <label>Description </label>
+                            <input  class="form-control col-md-7 col-xs-12" data-validate-length-range="6"
+                                   data-validate-words="2" name="name" value="View post" required="required"
+                                   type="text">
+                        </div>
 
-                            <div class="form-group">
-                                <table class="table table-striped projects">
-                                    <thead>
-                                    <tr>
-                                        <th style="width: 5%">#</th>
-                                        <th style="width: 15%">Role name</th>
-                                        <th style="width: 5%">Check all</th>
-                                        <th style="width: 1%">Create</th>
-                                        <th style="width: 1%">View</th>
-                                        <th style="width: 1%">Update</th>
-                                        <th style="width: 1%">Delete</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>#</td>
-                                        <td>
-                                            <a>Manage Role</a>
-                                            <br>
-                                            <small></small>
-                                        <td style="text-align: center">
-                                            <ul class="list-inline">
-                                                <p><input type="checkbox" id="select_all1" /></p>
-                                            </ul>
-                                        </td>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <ul class="list-inline">
-                                                <p><input type="checkbox" class="checkbox1" value="1" /></p>
-                                            </ul>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox1" value="2" /></p>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox1" value="3" /></p>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox1" value="4" /></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    <tr>
-                                        <td>#</td>
-                                        <td>
-                                            <a>Manage User</a>
-                                            <br>
-                                            <small></small>
-                                        <td style="text-align: center">
-                                            <ul class="list-inline">
-                                                <p><input type="checkbox" id="select_all2" /></p>
-                                            </ul>
-                                        </td>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <ul class="list-inline">
-                                                <p><input type="checkbox" class="checkbox2" value="1" /></p>
-                                            </ul>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox2" value="2" /></p>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox2" value="3" /></p>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox2" value="4" /></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    <tr>
-                                        <td>#</td>
-                                        <td>
-                                            <a>Manage Category</a>
-                                            <br>
-                                            <small></small>
-                                        <td style="text-align: center">
-                                            <ul class="list-inline">
-                                                <p><input type="checkbox" id="select_all3" checked /></p>
-                                            </ul>
-                                        </td>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <ul class="list-inline">
-                                                <p><input type="checkbox" class="checkbox3" value="1" checked /></p>
-                                            </ul>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox3" value="2" checked /></p>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox3" value="3" checked /></p>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox3" value="4" checked /></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    <tr>
-                                        <td>#</td>
-                                        <td>
-                                            <a>Manage Post</a>
-                                            <br>
-                                            <small></small>
-                                        <td style="text-align: center">
-                                            <ul class="list-inline">
-                                                <p><input type="checkbox" id="select_all4" checked /></p>
-                                            </ul>
-                                        </td>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <ul class="list-inline">
-                                                <p><input type="checkbox" class="checkbox4" value="1" checked /></p>
-                                            </ul>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox4" value="2" checked /></p>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox4" value="3" checked /></p>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox4" value="4" checked /></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    <tr>
-                                        <td>#</td>
-                                        <td>
-                                            <a>Manage Material</a>
-                                            <br>
-                                            <small></small>
-                                        <td style="text-align: center">
-                                            <ul class="list-inline">
-                                                <p><input type="checkbox" id="select_all5" /></p>
-                                            </ul>
-                                        </td>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <ul class="list-inline">
-                                                <p><input type="checkbox" class="checkbox5" value="1" /></p>
-                                            </ul>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox5" value="2" /></p>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox5" value="3" /></p>
-                                        </td>
-                                        <td style="text-align: center">
-                                            <p><input type="checkbox" class="checkbox5" value="4" /></p>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="form-group">
+                            <table class="table table-striped projects">
+                                <thead>
+                                <tr>
+                                    <th style="width: 5%">#</th>
+                                    <th style="width: 15%">Role name</th>
+                                    <th style="width: 1%">Create</th>
+                                    <th style="width: 1%">View</th>
+                                    <th style="width: 1%">Update</th>
+                                    <th style="width: 1%">Delete</th>
+                                    <th style="width: 5%">Check all</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>#</td>
+                                    <td>
+                                        <a>Manage Role</a>
+                                        <br>
+                                        <small></small>
 
+                                    </td>
+                                    <td style="text-align: center">
+                                        <ul class="list-inline">
+                                            <p><input type="checkbox" class="checkbox1" name = "acs" value="1" /></p>
+                                        </ul>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox1" name = "acs" value="2" /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox1" name = "acs" value="3" /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox1" name = "acs" value="4" /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <ul class="list-inline">
+                                            <a><input type="button" class = "btn btn-success btn-xs" onclick = "selectAll('acs')" /></a>
+                                            <a><input type="button" class = "btn btn-danger btn-xs" onclick = "UnSelectAll('acs')" /></a>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>
+                                        <a>Manage User</a>
+                                        <br>
+                                        <small></small>
+
+                                    </td>
+                                    <td style="text-align: center">
+                                        <ul class="list-inline">
+                                            <p><input type="checkbox" class="checkbox2" name="acs2" value="1" /></p>
+                                        </ul>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox2" name="acs2"value="2" /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox2"name="acs2" value="3" /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox2"name="acs2" value="4" /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <ul class="list-inline">
+                                            <a><input type="button" class = "btn btn-success btn-xs" onclick = "selectAll('acs2')" /></a>
+                                            <a><input type="button" class = "btn btn-danger btn-xs" onclick = "UnSelectAll('acs2')" /></a>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>
+                                        <a>Manage Category</a>
+                                        <br>
+                                        <small></small>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <ul class="list-inline">
+                                            <p><input type="checkbox" class="checkbox3" name = "acs3"value="1"  /></p>
+                                        </ul>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox3" name = "acs3"value="2"  /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox3" name = "acs3"value="3"  /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox3" name = "acs3"value="4"  /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <ul class="list-inline">
+                                            <a><input type="button" class = "btn btn-success btn-xs" onclick = "selectAll('acs3')" /></a>
+                                            <a><input type="button" class = "btn btn-danger btn-xs" onclick = "UnSelectAll('acs3')" /></a>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>
+                                        <a>Manage Post</a>
+                                        <br>
+                                        <small></small>
+
+                                    </td>
+                                    <td style="text-align: center">
+                                        <ul class="list-inline">
+                                            <p><input type="checkbox" class="checkbox4"name = "asc5" value="1"  checked/></p>
+                                        </ul>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox4" name = "asc5"value="2"  /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox4" name = "asc5"value="3"  /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox4" name = "asc5"value="4"  /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <ul class="list-inline">
+                                            <a><input type="button" class = "btn btn-success btn-xs" onclick = "selectAll('asc5')" /></a>
+                                            <a><input type="button" class = "btn btn-danger btn-xs" onclick = "UnSelectAll('asc5')" /></a>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>
+                                        <a>Manage File&Folder</a>
+                                        <br>
+                                        <small></small>
+
+                                    </td>
+                                    <td style="text-align: center">
+                                        <ul class="list-inline">
+                                            <p><input type="checkbox" class="checkbox5" name = "asc4"value="1" /></p>
+                                        </ul>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox5" name = "asc4"value="2" /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox5"name = "asc4" value="3" /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <p><input type="checkbox" class="checkbox5" name = "asc4"value="4" /></p>
+                                    </td>
+                                    <td style="text-align: center">
+                                        <ul class="list-inline">
+                                            <a><input type="button" class = "btn btn-success btn-xs" onclick = "selectAll('asc4')" /></a>
+                                            <a><input type="button" class = "btn btn-danger btn-xs" onclick = "UnSelectAll('asc4')" /></a>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" onclick="updateConfirm()" class="btn btn-success"
-                                    data-dismiss="modal">Update</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="updateConfirm()" data-dismiss="modal">Update</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
                         <script>
             var resizefunc = [];
         </script>
@@ -508,29 +709,7 @@
 <!--    });-->
 <!--</script>-->
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#select_all1').on('click', function () {
-            if (this.checked) {
-                $('.checkbox1').each(function () {
-                    this.checked = true;
-                });
-            } else {
-                $('.checkbox1').each(function () {
-                    this.checked = false;
-                });
-            }
-        });
 
-        $('.checkbox1').on('click', function () {
-            if ($('.checkbox1:checked').length == $('.checkbox1').length) {
-                $('#select_all1').prop('checked', true);
-            } else {
-                $('#select_all1').prop('checked', false);
-            }
-        });
-    });
-</script>
 <script>
     function deleteRow(td) {
         let text = confirm("Do you want to delete this field?");
@@ -539,5 +718,31 @@
             document.getElementById("tblRole").deleteRow(row.rowIndex);
         }
         return true;
+    }
+</script>
+<script type="text/javascript">
+    function selectAll(name){
+        var items=document.getElementsByName(name);
+        for(var i=0; i<items.length; i++){
+            if(items[i].type=='checkbox')
+                items[i].checked=true;
+        }
+    }
+
+    function UnSelectAll(name){
+        var items=document.getElementsByName(name);
+        for(var i=0; i<items.length; i++){
+            if(items[i].type=='checkbox')
+                items[i].checked=false;
+        }
+    }
+
+    function updateConfirm(){
+        alert("Update successful");
+    }
+
+    function viewRole(td){
+        let row = td.parentElement.parentElement;
+
     }
 </script>

@@ -1,0 +1,17 @@
+.title{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #0d0d0f;
+    font-family: Arial;
+}
+.co{
+    border-color: #0d0d0f;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 5px 10px 3px 20px;
+
+}
+.fa{
+    color: #3b3e47;
+}

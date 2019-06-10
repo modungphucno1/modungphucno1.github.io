@@ -29,15 +29,7 @@
                 <!-- LOGO -->
                 <div class="topbar-left">
                     <a href="index.html" class="logo"><span>NEWS<span>PORTAL</span></span><i class="mdi mdi-layers"></i></a>
-                    <!-- Image logo -->
-                    <!--<a href="index.html" class="logo">-->
-                        <!--<span>-->
-                            <!--<img src="assets/images/logo.png" alt="" height="30">-->
-                        <!--</span>-->
-                        <!--<i>-->
-                            <!--<img src="assets/images/logo_sm.png" alt="" height="28">-->
-                        <!--</i>-->
-                    <!--</a>-->
+
                 </div>
 
                 <!-- Button mobile view to collapse sidebar menu -->
@@ -159,16 +151,16 @@
                         <div class="row">
 							<div class="col-xs-12">
 								<div class="page-title-box">
-                                    <h4 class="page-title">Manage Categories</h4>
+                                    <h4 class="page-title">Assign Role</h4>
                                     <ol class="breadcrumb p-0 m-0">
                                         <li>
-                                            <a href="#">Admin</a>
+                                            <a href="dashboard.html">Admin</a>
                                         </li>
                                         <li>
-                                            <a href="#">Category </a>
+                                            <a href="#">Role </a>
                                         </li>
                                         <li class="active">
-                                           Manage Categories
+                                           Assign Role
                                         </li>
                                     </ol>
                                     <div class="clearfix"></div>
@@ -192,61 +184,70 @@
 										<div class="col-md-12">
 											<div class="demo-box m-t-20">
 <div class="m-b-30">
-<a href="add-category.html">
+<a href="add-role.html">
 <button id="addToTable" class="btn btn-success waves-effect waves-light">Add <i class="mdi mdi-plus-circle-outline" ></i></button>
 </a>
  </div>
 
 												<div class="table-responsive">
-                                                    <table class="table m-0 table-colored-bordered table-bordered-primary" id = "tblCategory">
+                                                    <table class="table m-0 table-colored-bordered table-bordered-primary" id = "tblRole">
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
-                                                                <th> Category</th>
-                                                                <th>Description</th>
-                                                                <th>Created at</th>
-                                                                <th>Last updated at</th>
-                                                                <th>Action</th>
+                                                                <th>Username</th>
+                                                                <th>Email</th>
+                                                                <th>Role</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>JAVA</th>
-                                                            <th>Something about java</th>
-                                                            <th>19/12/2018</th>
-                                                            <th>20/12/2018</th>
-                                                            <th> <a data-toggle="modal" data-target="#editCategory" class="btn btn-primary btn-xs" ><i class="fa fa-pencil"></i></a>
-                                                                <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
-                                                                        class="fa fa-trash-o"></i>  </a></th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>PHP</th>
-                                                            <th>Something about php</th>
-                                                            <th>19/12/2018</th>
-                                                            <th>20/12/2018</th>
-                                                            <th> <a data-toggle="modal" data-target="#editCategory2" class="btn btn-primary btn-xs" onclick="updateRow(this)"><i class="fa fa-pencil"></i></a>
-                                                                <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
-                                                                        class="fa fa-trash-o"></i>  </a></th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>JAVASCRIPT</th>
-                                                            <th>Something about js</th>
-                                                            <th>19/12/2018</th>
-                                                            <th>20/12/2018</th>
-                                                            <th> <a data-toggle="modal" data-target="#editCategory3" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
-                                                                <a class="btn btn-danger btn-xs" onclick="deleteRow(this)" href="javascript:void(0)"><i
-                                                                        class="fa fa-trash-o"></i>  </a></th>
-                                                        </tr>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>tannm.hanu </th>
+                                                                <th>tannm.hanu@gmail.com</th>
+                                                                <th><select>
+                                                                    <option selected>Admin</option>
+                                                                    <option>Editor</option>
+                                                                    <option>User</option>
+                                                                </select></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>sonpt.hanu  </th>
+                                                                <th>tanpt.hanu@gmail.com</th>
+                                                                <th><select>
+                                                                    <option selected>Admin</option>
+                                                                    <option>Editor</option>
+                                                                    <option>User</option>
+                                                                </select></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>sondh.hanu</th>
+                                                                <th>	sondh.hanu@gmail.com</th>
+                                                                <th><select>
+                                                                    <option >Admin</option>
+                                                                    <option selected>Editor</option>
+                                                                    <option>User</option>
+                                                                </select></th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>huynhnd.hanu</th>
+                                                                <th>huynhnd.hanu@gmail.com</th>
+                                                                <th><select>
+                                                                    <option >Admin</option>
+                                                                    <option>Editor</option>
+                                                                    <option selected>User</option>
+                                                                </select></th>
+                                                            </tr>
                                                         </tbody>
-                                                  
                                                     </table>
 													
                                                 </div>
-
-
+                                                <div class="m-b-30"></div>
+                                                <div class="m-b-28d">
+                                                        <button  class="btn btn-primary waves-effect waves-light" style="float: right; margin-right: 50px" onclick="alert('Changes saved')">Save <i class="fa fa-floppy-o"></i></button>
+                                                </div>
 
 
 											</div>
@@ -269,116 +270,9 @@
             </div>
 
         </div>
-        <div class="modal fade" id="editCategory" tabindex="-1" role="dialog"
-             aria-labelledby="myModalLabel" style="display: none;">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <form method="POST" novalidate id="myForm">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"
-                                    aria-label="Close"><span aria-hidden="true">×</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Edit Category</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label>Category Name</label>
-                                <input id="name" type="text" class="form-control"
-                                       value="JAVA">
-                            </div>
-                            <div class="form-group">
-                                <label>Description</label>
-                                <textarea id = "textDes" name=""
-                                          class="form-control" >Somethings about java</textarea>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" onclick="alert('Update successful')" class="btn btn-primary"
-                                    data-dismiss="modal">Update</button>
-
-                            <!-- <button type="button" class="btn btn-info" onclick="reset()">Reset</button> -->
-
-                            <button type="button" data-dismiss="modal"
-                                    class="btn btn-danger">Cancel</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="editCategory2" tabindex="-1" role="dialog"
-             aria-labelledby="myModalLabel" style="display: none;">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <form method="POST" novalidate >
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"
-                                    aria-label="Close"><span aria-hidden="true">×</span></button>
-                            <h4 class="modal-title" >Edit Category</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label>Category Name</label>
-                                <input  type="text" class="form-control"
-                                       value="PHP">
-                            </div>
-                            <div class="form-group">
-                                <label>Description</label>
-                                <textarea  name=""
-                                          class="form-control" >Somethings about php</textarea>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" onclick="alert('Update successful')" class="btn btn-primary"
-                                    data-dismiss="modal">Update</button>
-
-                            <!-- <button type="button" class="btn btn-info" onclick="reset()">Reset</button> -->
-
-                            <button type="button" data-dismiss="modal"
-                                    class="btn btn-danger">Cancel</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="editCategory3" tabindex="-1" role="dialog"
-             aria-labelledby="myModalLabel" style="display: none;">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <form method="POST" novalidate >
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"
-                                    aria-label="Close"><span aria-hidden="true">×</span></button>
-                            <h4 class="modal-title" >Edit Category</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label>Category Name</label>
-                                <input type="text" class="form-control"
-                                       value="JAVASCRIPT">
-                            </div>
-                            <div class="form-group">
-                                <label>Description</label>
-                                <textarea  name=""
-                                          class="form-control" >Somethings about js</textarea>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" onclick="alert('Update successful')" class="btn btn-primary"
-                                    data-dismiss="modal">Update</button>
-
-                            <!-- <button type="button" class="btn btn-info" onclick="reset()">Reset</button> -->
-
-                            <button type="button" data-dismiss="modal"
-                                    class="btn btn-danger">Cancel</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
         <!-- END wrapper -->
 
-		
-		
-        <script>
+                        <script>
             var resizefunc = [];
         </script>
 
@@ -421,53 +315,41 @@
 <!--       });-->
 <!--    });-->
 <!--</script>-->
-<script>
-    var userListData = [];
-
-    $(document).ready(function() {
-
-        populateTable();
-
-    });
-
-    function populateTable() {
-
-    let tableContent = '';
 
 
-    $.get( "data/category.txt", function( data ) {
-
-        alert(data);
-        //this will split the string into array line by line
-        var lineByline = data.split('\n');
-        //here we're itraing the array which you've created and printing the values
-        $.each(lineByline , function(key,value){
-            tableContent += '<tr>';
-            tableContent += '<td>' + value + '</td>';
-            tableContent += '</tr>';
-        });
-
-        $('#tblCategory').html(tableContent);
-        console.log(tableContent);
-    });
-};</script>
 <script>
     function deleteRow(td) {
         let text = confirm("Do you want to delete this field?");
         if (text == true) {
-            let row = td.parentElement.parentElement;
-            document.getElementById("tblCategory").deleteRow(row.rowIndex);
+            row = td.parentElement.parentElement;
+            document.getElementById("tblRole").deleteRow(row.rowIndex);
         }
         return true;
     }
 </script>
+<script type="text/javascript">
+    function selectAll(name){
+        var items=document.getElementsByName(name);
+        for(var i=0; i<items.length; i++){
+            if(items[i].type=='checkbox')
+                items[i].checked=true;
+        }
+    }
 
-<script>
-    function updateRowJAVA(td){
+    function UnSelectAll(name){
+        var items=document.getElementsByName(name);
+        for(var i=0; i<items.length; i++){
+            if(items[i].type=='checkbox')
+                items[i].checked=false;
+        }
+    }
+
+    function updateConfirm(){
+        alert("Update successful");
+    }
+
+    function viewRole(td){
         let row = td.parentElement.parentElement;
-        let cell = document.getElementById("tblCategory").rows[row.rowIndex].cells;
-        document.getElementById("name").value = cell[1].value ;
-        document.getElementById("textDes").value = cell[2].value ;
 
     }
 </script>
