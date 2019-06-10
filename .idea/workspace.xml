@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24b34e4a-da98-4f09-af85-3beacd4226c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-category.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-role.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-role.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/manage-categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-categories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/manage-file.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/manage-posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-posts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/manage-role.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-role.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/manage-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage-user.html" afterDir="false" />
-    </list>
+    <list default="true" id="24b34e4a-da98-4f09-af85-3beacd4226c0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -54,10 +41,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/manage-categories.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/manage-ff2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="204" column="48" selection-start-line="204" selection-start-column="48" selection-end-line="204" selection-end-column="48" />
+            <state relative-caret-position="255">
+              <caret line="207" column="49" selection-start-line="207" selection-start-column="49" selection-end-line="207" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -137,7 +141,6 @@
         <option value="$PROJECT_DIR$/admin/manage-role.html" />
         <option value="$PROJECT_DIR$/admin/manage-posts.html" />
         <option value="$PROJECT_DIR$/admin/manage-file.html" />
-        <option value="$PROJECT_DIR$/admin/manage-categories.html" />
         <option value="$PROJECT_DIR$/admin/edit-post2.html" />
         <option value="$PROJECT_DIR$/admin/edit-post.html" />
         <option value="$PROJECT_DIR$/admin/dashboard.html" />
@@ -149,6 +152,7 @@
         <option value="$PROJECT_DIR$/admin/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/admin/manage-ff.html" />
         <option value="$PROJECT_DIR$/admin/manage-ff2.html" />
+        <option value="$PROJECT_DIR$/admin/manage-categories.html" />
       </list>
     </option>
   </component>
@@ -259,12 +263,12 @@
       <workItem from="1560009442232" duration="16031000" />
       <workItem from="1560026494186" duration="21688000" />
       <workItem from="1560071153367" duration="16298000" />
-      <workItem from="1560098247945" duration="25099000" />
+      <workItem from="1560098247945" duration="25973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79116000" />
+    <option name="totallyTimeSpent" value="79990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -469,22 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/manage-categories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
-          <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/edit-post2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -610,8 +598,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/manage-ff2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="204" column="48" selection-start-line="204" selection-start-column="48" selection-end-line="204" selection-end-column="48" />
+        <state relative-caret-position="255">
+          <caret line="207" column="49" selection-start-line="207" selection-start-column="49" selection-end-line="207" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -620,6 +608,21 @@
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/manage-categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
