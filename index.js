@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 requestPayerEmail: false,
                 requestPayerName: false,
                 requestPayerPhone: false,
-                requestShipping: true,
+                requestShipping: false,
             }
         }
 
