@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 requestPayerEmail: false,
                 requestPayerName: false,
                 requestPayerPhone: false,
-                requestShipping: false,
+                requestShipping: true,
             }
         }
 
