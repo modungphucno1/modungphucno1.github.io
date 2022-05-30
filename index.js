@@ -19,27 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     value: '1.00'
                 }
             },
-            shippingOptions: [{
-                    id: "standard",
-                    label: "🚛 Ground Shipping (2 days)",
-                    // apple pay only
-                    detail: 'Estimated delivery time: 2 days',
-                    amount: {
-                        currency: "TWD",
-                        value: "5.00"
-                    }
-                },
-                {
-                    id: "drone",
-                    label: "🚀 Drone Express (2 hours)",
-                    // apple pay only
-                    detail: 'Estimated delivery time: 2 hours',
-                    amount: {
-                        currency: "TWD",
-                        value: "25.00"
-                    }
-                },
-            ],
+       
             // optional
             options: {
                 requestPayerEmail: false,
