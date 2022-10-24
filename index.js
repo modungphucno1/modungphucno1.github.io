@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('version 1');
     var pay_button
     if (TPDirect.paymentRequestApi.checkAvailability()) {
         
