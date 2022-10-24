@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('version 1');
+    console.log('version 2');
     var pay_button
     if (TPDirect.paymentRequestApi.checkAvailability()) {
         
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        TPDirect.setupSDK(11327, 'app_whdEWBH8e8Lzy4N6BysVRRMILYORF6UxXbiOFsICkz0J9j1C0JUlCHv1tVJC', 'sandbox')
+        TPDirect.setupSDK(123988, 'app_rwewyMXoOeKh06AeA86gtLlGAPkqHbjbkjiGzerTuAdhzXnskiTQgCnLdw3T', 'sandbox')
         TPDirect.paymentRequestApi.setupApplePay({
             // required, your apple merchant id
-            merchantIdentifier: 'merchant.tech.cherri.global.test',
+            merchantIdentifier: 'APMEau675puoTyc7Y0oO',
             // defaults to 'TW'
             countryCode: 'TW'
         })
