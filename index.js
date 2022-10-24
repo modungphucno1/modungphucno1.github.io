@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 label: '付給 TapPay',
                 amount: {
                     currency: 'TWD',
-                    value: '2.00'
+                    value: '1.00'
                 }
             },
        
