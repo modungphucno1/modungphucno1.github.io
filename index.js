@@ -12,11 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     value: '1.00'
                 }
             }],
+            shippingOptions: [{
+                    id: "standard",
+                    label: "🚛 Ground Shipping (2 days)",
+                    detail: 'Estimated delivery time: 2 days',
+                    amount: {
+                        currency: "TWD",
+                        value: "1.00"
+                    }
+                }
+            ],
             total: {
                 label: '付給 TapPay',
                 amount: {
                     currency: 'TWD',
-                    value: '1.00'
+                    value: '2.00'
                 }
             },
        
