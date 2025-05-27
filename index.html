@@ -69,6 +69,59 @@
     </div>
 
     <script src="./index.js"></script>
+    <script>
+        function openApp() {
+        const params = new URLSearchParams(window.location.search);
+        const sessionId = params.get('session_id');
+
+        if (!sessionId) {
+            return;
+        }
+
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+        const isAndroid = /android/i.test(userAgent);
+
+        // Config
+        const iosDeeplink = "f45c2://track/lionheart/" + sessionId;
+        const iosAppStore = "https://apps.apple.com/app/f45-training/id1115028194";
+
+        const androidDeeplink = "intent://product/123#Intent;scheme=yourapp;package=com.yourapp.package;end";
+        const androidPlayStore = "https://play.google.com/store/apps/details?id=com.f45training.challenge";
+
+        const now = Date.now();
+
+        function launchApp(url) {
+            const iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = url;
+            document.body.appendChild(iframe);
+        }
+
+        // launchApp(iosDeeplink);
+        window.location.href = iosDeeplink;
+        if (isIOS) {
+            // launchApp(iosDeeplink);
+            setTimeout(() => {
+                if (Date.now() - now < 2200) {
+                    window.location.href = iosAppStore;
+                }
+            }, 1500);
+        } else if (isAndroid) {
+            launchApp(androidDeeplink);
+            setTimeout(() => {
+                if (Date.now() - now < 2200) {
+                    window.location.href = androidPlayStore;
+                }
+            }, 1500);
+        } else {
+            // alert("Your device is not supported. Please use an iOS or Android device to open the app.");
+        }
+    }
+
+    openApp();
+    </script>
 </body>
 
 </html>
