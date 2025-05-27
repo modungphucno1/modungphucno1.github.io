@@ -70,58 +70,45 @@
 
     <script src="./index.js"></script>
     <script>
-        function openApp() {
-        const params = new URLSearchParams(window.location.search);
-        const sessionId = params.get('session_id');
-
-        if (!sessionId) {
-            return;
-        }
-
+    function openApp() {
         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
         const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
         const isAndroid = /android/i.test(userAgent);
 
-        // Config
-        const iosDeeplink = "f45c2://track/lionheart/" + sessionId;
-        const iosAppStore = "https://apps.apple.com/app/f45-training/id1115028194";
+        const iosDeeplink = "yourapp://product/123";
+        const iosAppStore = "https://apps.apple.com/app/id1234567890";
 
-        const androidDeeplink = "intent://product/123#Intent;scheme=yourapp;package=com.yourapp.package;end";
-        const androidPlayStore = "https://play.google.com/store/apps/details?id=com.f45training.challenge";
+        const androidDeeplink = "yourapp://product/123";
+        const androidPlayStore = "https://play.google.com/store/apps/details?id=com.yourapp.package";
+
+        const fallbackDelay = 1500;
 
         const now = Date.now();
 
-        function launchApp(url) {
-            const iframe = document.createElement("iframe");
-            iframe.style.display = "none";
-            iframe.src = url;
-            document.body.appendChild(iframe);
-        }
+        if (isIOS || isAndroid) {
+            const deeplink = isIOS ? iosDeeplink : androidDeeplink;
+            const storeLink = isIOS ? iosAppStore : androidPlayStore;
+            
+            const a = document.createElement("a");
+            a.href = deeplink;
+            a.style.display = "none";
+            document.body.appendChild(a);
 
-        // launchApp(iosDeeplink);
-        window.location.href = iosDeeplink;
-        if (isIOS) {
-            // launchApp(iosDeeplink);
+            a.click();
+
             setTimeout(() => {
-                if (Date.now() - now < 2200) {
-                    window.location.href = iosAppStore;
+                if (Date.now() - now < fallbackDelay + 200) {
+                    window.location.href = storeLink;
                 }
-            }, 1500);
-        } else if (isAndroid) {
-            launchApp(androidDeeplink);
-            setTimeout(() => {
-                if (Date.now() - now < 2200) {
-                    window.location.href = androidPlayStore;
-                }
-            }, 1500);
+            }, fallbackDelay);
         } else {
-            // alert("Your device is not supported. Please use an iOS or Android device to open the app.");
+            alert("Your device is not supported. Please use an iOS or Android device.");
         }
     }
 
     openApp();
-    </script>
+</script>
 </body>
 
 </html>
